@@ -1,0 +1,695 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    font: 11px / 1.3 Verdana, Geneva, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5E5DA;
+}
+
+p {
+    /* fontgrootte en afstand tss de letters */
+    margin-top: 0;
+}
+
+table, img {
+    border: 0px;
+}
+
+#centreren {
+    width: 870px;
+    margin: 0px auto; 
+}
+
+#wrapper {
+    min-width: 870px;
+    width: 100%;
+    
+}
+
+#outer {
+    border-left: 140px solid #E5E5DA; /* left column background */
+    border-right: 160px solid #E5E5DA; /* right column background */
+    background-color: #FAFAFA; /* center column background */
+    
+}
+
+#inner {
+    margin: 0;
+    width: 570px;
+}
+
+#header {
+    background: url(../images/header.jpg) no-repeat top center;
+    background-color: #333333;
+    width: 850px;
+    height: 175px;
+}
+
+#header h1 {
+    display: none;
+}
+
+#header h2 {
+    display: none;
+}
+
+#header h3 {
+    display: none;
+}
+
+#header p {
+    display: none;
+}
+
+#side1 {
+    width: 181px; /* left column width */
+    margin-left: -181px; /* negative left column width */
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+
+#side1 .txt {
+    width: 140px;
+    background-color: #FCF5F5;
+    border: 0px inset #901602;
+}
+
+#side2 {
+    width: 160px; /* right column width */
+    margin-right: -160px; /* negative right column width */
+    float: left;
+    position: relative;
+    z-index: 11;
+}
+
+#side2 h3 {
+    font: 110% Georgia, "Times New Roman", Times, serif;
+    color: #621313;
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-bottom: 4px;
+    padding-left: 10px;
+}
+
+#side2 p {
+    padding-left: 10px;
+}
+
+#content {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 12;
+    font-size: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+#content h2 {
+    font: 130% Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    color: #5C9953;
+    margin-left: 10px;
+}
+
+#content p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#footer {
+    background-color: #E5E5DA;
+    width: 100%;
+    position: relative;
+    z-index: 13;
+    border-top: 1px dotted #333333;
+}
+
+#footer p {
+    padding-left: 10px;
+}
+
+.clear {
+    clear: both;
+}
+/* Mozilla bug workarounds */
+#outer > #inner {
+    border-bottom: 0px solid transparent;
+}
+
+#side1 {
+    margin-right: 0px;
+}
+
+#side2 {
+    margin-left: 0px;
+}
+
+#content {
+    margin: 0 -23px 0 -2px;
+    padding: 10px;
+}
+/* links opmaak */
+a:link {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #990000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:active {
+    color: #999999;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#witgroen a:link {
+    color: #9ABD3B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#witgroen a:visited {
+    color: #9ABD3B;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#witgroen a:hover {
+    color: #FF6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#witgroen a:active {
+    color: #990000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#title {
+    color: #B2111C;
+    font-weight: bold;
+}
+
+input, option {
+    font-size: 8pt;
+}
+
+.centreren {
+    text-align: center;
+    vertical-align: middle;
+}
+/* klassen gedefinieerd voor de lijnen, ipv kleur rechtstreeks op te geven */
+.lijn_grijs {
+    background-color: #FAFAFA;
+}
+
+.lijn_wit {
+    background-color: #EEEEEE;
+}
+
+.lijn_donker {
+    background-color: #BDBDA1;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.lijn_boven {
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #010101;
+}
+
+.centreer {
+    text-align: center;
+}
+
+.naam {
+    color: #B2111C;
+    font-weight: bold;
+    width: 300px;
+}
+
+.fotoknop {
+    width: 30px;
+}
+
+.prijs {
+    width: 50px;
+}
+
+.prijsEnkel {
+    width: 60px;
+}
+
+.prijzen {
+    margin: 0px 2px 0px 1px;
+    float: left;
+    width: 45px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+ul.none {
+    list-style-type: none;
+    /** list-style-type: none; */
+}
+/* stijlen uit de verschillende paginas gehaald, en samengevoegd hier */
+
+.style4 {
+    color: #990000;
+}
+
+.rood_vet {
+    color: #990000;
+    font-weight: bold;
+}
+
+.wit_vet {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.donkergroen {
+    color: #006600;
+    font-size: 14px;
+}
+
+.style9 {
+    font-weight: bold
+}
+
+.groot-vet {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.licht_rood, .style10 {
+    color: #B3111C
+}
+
+.style11 {
+    color: #B1111B
+}
+
+.stappen, .style12 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
+    background: #CC6600;
+    width: 60px;
+    padding: 2px;
+}
+
+.form_elements{
+    padding: 5px;
+}
+
+.form_elements li{
+    list-style: none;
+    position: relative;
+    left: -40px;
+    padding: 0px;
+    width: 125px;
+    margin: 0px;
+}
+
+.green_background{
+    background: #9ABD3B;
+}
+
+.style15 {
+    font-size: 10px
+}
+
+.style16 {
+    font-size: 14px
+}
+
+.style18 {
+    font-size: 9px
+}
+
+.pomTitel {
+    background-color: #CC6600;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    width: 50px;
+    margin: 5px 5px 5px 5px;
+}
+
+.centertable{
+    width: 550px;
+}
+
+.centertable td{
+    padding: 3px;
+}
+
+.divPomAfbeelding {
+    position: absolute;
+    width: 265px;
+    height: 250px;
+    left: 2px;
+    top: 280px;
+    visibility: hidden;
+}
+
+.toppingfoto {
+    position: absolute;
+    width: 265px;
+    height: 250px;
+    left: 2px;
+    top: 280px;
+}
+
+div#pomDeeg {
+    /*float: left;*/
+    display: inline;
+}
+
+div#pomBodem {
+    /*position: relative;
+     top: -82px;
+     left: 200px;*/
+    /*float: right;*/
+    display: inline;
+}
+
+#pomTussenLijn {
+    width: 100%;
+    height: 20px;
+    background-color: #9ABD3B;
+    /*position: relative;
+     top: -70px;*/
+}
+
+#pomToppings {
+    /*position: relative;
+     top: -70px;
+    */
+    float: left;
+}
+
+#pomFoto {
+    background-color: #CC6600;
+    height: 280px;
+    width: 280px;
+    margin: 5px 5px 5px 5px;
+    float: right;
+}
+
+#foto{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#links5050 {
+    position: relative;
+    left: 2px;
+}
+
+#rechts5050 {
+    position: relative;
+    right: 2px;
+}
+
+.vet {
+    font-weight: bold;
+}
+
+.rood {
+    color: #B3111C
+}
+/* klassen voor het winkelmandje */
+.mandjeAantalPlus {
+    position: relative;
+
+}
+
+.mandjeAantalMin {
+    position: relative;
+}
+
+.mandjeItem {
+    position: relative;
+    top: -25px;
+    left: 9px;
+    width: 110px;
+    margin: 0px 0px -20px 0px;
+    padding: 0px;
+    /*border: 1px black solid;*/
+}
+
+.mandjeSubItem {
+    margin: 0px 0px 0px 0px;
+}
+
+#leegMandje {
+    border-width: thin;
+    border-style: inset;
+    border-color: #FF0000;
+    text-align: center;
+}
+
+.rechts {
+    text-align: right;
+}
+
+.fout {
+    color: #B2111C;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.foutCel {
+    background-color: #FF843C;
+}
+
+.remark{
+    border: 1px solid #9ABD3B;
+    text-align: center;
+    vertical-align: middle;
+    background: #E3EFC2;
+    padding: 10px;
+}
+
+#deeg-element, #bodem-element{
+    position: relative;
+    left: -30px;
+}
+
+.onderlijn {
+    border-bottom: 1px black solid;
+}
+
+#sidebar-right {
+    width: 155px;	
+}
+
+#sidebar-left{
+    width: 181px;	
+}
+
+#sidebar-left .item-white, #sidebar-left .item-white-right{
+    background-color: #FFF;
+}
+
+#sidebar-left .item-green{
+    background-color: #9ABD3B;
+}
+
+#sidebar-left .info{
+    background-color: #BDBDA1;
+}
+
+#sidebar-left .item-white-right{
+    text-align: right;
+}
+
+#sidebar-admin{
+    background-color: #FFF;
+    width: 170px;
+    float: left;
+}
+
+#content-admin{
+    background-color: #FFF;
+    width: 640px;
+    float: right;
+    position: relative;
+    left: -20px;
+    padding: 15px;
+}
+
+.knop {
+    width: 70px;
+    height: 20px;
+    background-color: #9ABD3B;
+    color: #fff;
+    font-size: 9pt;
+    font-family: Arial,Helvetica,sans-serif;
+    position: relative;
+    left: -5px;
+}
+
+.element-space{
+    padding: 3px;
+}
+
+#hours{
+    border: 2px #9ABD3B solid;
+}
+
+.error{
+    color:#f00;
+}
+
+label.required:after {
+    color:#f00; 
+    content: " *";
+}
+
+
+form>div>ul{
+    list-style:none;
+
+}
+
+form>div>ul>li{
+    display:inline-block;
+    line-height:30px;
+}
+
+form>div>ul label{
+    display:block;
+    width:120px;
+}
+
+form>div>ul input{
+    width:120px;
+}
+
+form>div>ul input[type=submit]{
+    position:relative;
+    left:11.8em;
+
+}
+
+ul.errors{
+    color:#f00;
+}
+
+ul.errors{
+    display:inline-block;
+    width:18em;
+    position:relative;
+    top:0.5em;
+    margin:0;   
+    padding:0 0 0 1.5em ;
+    list-style:none;    
+
+}
+
+
+#form_full>div>ul>li:not(:first-child) label,#frmOpinion>div>ul>li:not(:first-child) label{
+    width:45px;
+}
+
+form > div:nth-child(1) > ul > li > label input[type='radio']{
+    width:1.5em;
+}
+.hint {
+    position:relative;
+    left:13em;
+}
+
+.float-left{
+    float:left;
+    list-style:none;
+}
+
+.subitems{
+    margin-bottom:1em;
+}
+
+.subitems,.subitems ul{
+    list-style:none;   
+}
+
+
+.subitems.float-left li{
+    float:left;
+    margin-right:1em;
+}
+
+.subitems,.subitems.float-left :after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.hidden input{
+    display:none;
+}
+
+#slideshow{
+    margin: 0px auto;
+    position: relative;
+    width: 560px;
+    height: 100px;
+    padding: 2px;
+    left:-5px;
+}
+
+#slideshow > div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+#slideshow img {
+    max-width:560px;
+    max-height:100px;
+}
+
+#slideshow + ul {
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+#slideshow + ul li {
+    float:left;
+    border-radius:10px;
+    width:10px;
+    height:10px;
+    border:1px solid white;
+    background:grey;
+}
+#slideshow + ul li.active {
+    background:black;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
