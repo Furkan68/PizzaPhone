@@ -45,7 +45,7 @@ Note: look for js/index.js for phone settings with js
 		width: 100%;
 	}
 	.dm-container {
-		width: 90%;
+		width: 100%;
 		margin: 0 auto;
 	}
 	/* menu by header */
@@ -56,7 +56,12 @@ Note: look for js/index.js for phone settings with js
 	}
 	#mainmenu .dm-container .menu-block .dm-menu li
 	{
-		width: 100px;
+		/*width: 100px;*/
+	}
+	/*new/////////////////////////////////////////////////////*/
+	.dm-container .usermenu-block .dm-menu li.item a {
+		margin: 7px 5px;
+		padding: 8px 15px;
 	}
 
 	#side1, #side2 {
@@ -85,6 +90,7 @@ Note: look for js/index.js for phone settings with js
 		width:100%;
 		margin: 0 0;
 	}
+	/*Pizza middle nav*/
 	#mainbody .dm-block ul.nav.nav-tabs > li{
 		display: block;
 		width: 100%;
