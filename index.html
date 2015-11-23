@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
     <meta name="keywords" content="pizza,pizzaphone,pizza antwerpen,meeneempizza,pasta,pizzahut,pizza mortsel,salads"/>
@@ -39,7 +39,7 @@
 
     <!-- responsive css and config -->
     <link href="css/phone.css" media="screen" rel="stylesheet" type="text/css"/>
-    <link src="js/phone.js" type="text/javascript"/>
+    <!--<link src="js/phone.js" type="text/javascript"/>-->
 
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -87,131 +87,131 @@
             <div class="dm-block menu-block usermenu-block">
                 <ul class="dm-menu l1">
                     <!-- Modal triggers -->
+
                     <li class="item"><a href="#" data-toggle="modal" data-target="#inloggenModal">Inloggen</a></li>
                     <li class="item"><a href="#" data-toggle="modal" data-target="#registrerenModal">Registreren</a>
                     </li>
+
                 </ul>
                 <!-- Modal -->
-                <div class="modal fade" id="inloggenModal" tabindex="-1">
+                <div class="modal fade" id="inloggenModal" tabindex="-1" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">&times;</span></button>
-                                <h2 class="modal-title">Inloggen</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>Gelieve je emailadres en wachtwoord in te vullen.</p>
+                            <form id="login-form" action="/customer/lookup" method="post">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">×</span></button>
+                                    <h2 class="modal-title">Inloggen</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gelieve je emailadres en wachtwoord in te vullen.</p>
 
-                                <form id="registratieForm" method="post">
+
                                     <div class="form-block">
-                                        <div class="formControlLabel"><label for="email"
-                                                                             class="required">E-mail</label></br>
+                                        <div class="formControlLabel"><label for="email" class="required">E-mail</label>
                                         </div>
-                                        <div class="formControls"><input type="text" name="email" id="email" value="">
+                                        <div class="formControls"><input type="text" required="" name="email" id="email"
+                                                                         aria-invalid="true" class="user-error">
                                         </div>
                                     </div>
                                     <div class="form-block">
-                                        <div class="formControlLabel"><label for="wachtwoord" class="required">Wachtwoord</label></br>
+                                        <div class="formControlLabel"><label for="wachtwoord" class="required">Wachtwoord</label>
                                         </div>
-                                        <div class="formControls"><input type="text" name="wachtwoord" id="wachtwoord"
-                                                                         value=""></div>
+                                        <div class="formControls"><input type="password" name="wachtwoord"
+                                                                         id="wachtwoord" required=""></div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="knop knop-facebook"><img
-                                        src="images/template_images/facebook-button-icon.png" width="22" height="22"
-                                        style="margin-right: 6px;">Inloggen met Facebook
-                                </button>
-                                <button type="button" class="knop">Inloggen</button>
-                            </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="btn-inloggen" type="submit" class="knop">Inloggen</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
                 <!-- Modal -->
-                <div class="modal fade" id="registrerenModal" tabindex="-1">
+                <div class="modal fade" id="registrerenModal" tabindex="-1" aria-hidden="true" style="display: none;">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">&times;</span></button>
-                                <h2 class="modal-title">Registreren</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>Gelieve je klanteninformatie aan te vullen, alle velden zijn verplicht.</p>
+                            <form id="registratie-form" method="post" action="/customer/add-process">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">×</span></button>
+                                    <h2 class="modal-title">Registreren</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gelieve je klanteninformatie aan te vullen, alle velden behalve wachtwoord zijn
+                                        verplicht.</p>
 
-                                <p>Alle naam-velden moeten minstens 2 karakters bevatten en mogen alleen de karakters
-                                    a-z bevatten (hoofd- of kleine letters), en cijfers waar nodig.</p>
+                                    <p>Alle naam-velden moeten minstens 2 karakters bevatten en mogen alleen de
+                                        karakters
+                                        a-z bevatten (hoofd- of kleine letters), en cijfers waar nodig.</p>
 
-                                <form id="registratieForm" method="post">
+
                                     <div class="form-block">
                                         <div class="formControlLabel"><label for="voornaam"
-                                                                             class="required">Voornaam</label></br>
-                                        </div>
-                                        <div class="formControls">
-                                            <input type="text" name="voornaam" id="voornaam"
-                                                   value="">
-                                        </div>
+                                                                             class="required">Voornaam</label></div>
+                                        <div class="formControls"><input type="text" required="" name="voornaam"
+                                                                         id="voornaam" value=""></div>
                                     </div>
                                     <div class="form-block">
-                                        <div class="formControlLabel"><label for="naam"
-                                                                             class="required">Naam</label></br>
+                                        <div class="formControlLabel"><label for="naam" class="required">Naam</label>
                                         </div>
-                                        <div class="formControls"><input type="text" name="naam" id="naam" value="">
+                                        <div class="formControls"><input type="text" required="" name="naam" id="naam"
+                                                                         value="">
                                         </div>
                                     </div>
                                     <div class="form-block">
                                         <div class="formControlLabel"><label for="postcode"
-                                                                             class="required">Postcode</label></br>
-                                        </div>
-                                        <div class="formControls"><input type="text" name="postcode" id="postcode"
-                                                                         value=""></div>
+                                                                             class="required">Postcode</label></div>
+                                        <div class="formControls"><input type="text" required="" name="postcode"
+                                                                         id="postcode" value=""></div>
                                     </div>
                                     <div class="form-block">
                                         <div class="formControlLabel"><label for="gemeente"
-                                                                             class="required">Gemeente</label></br>
-                                        </div>
-                                        <div class="formControls"><input type="text" name="gemeente" id="gemeente"
-                                                                         value=""></div>
+                                                                             class="required">Gemeente</label></div>
+                                        <div class="formControls"><input type="text" required="" name="gemeente"
+                                                                         id="gemeente" value=""></div>
                                     </div>
                                     <div class="form-block">
                                         <div class="formControlLabel"><label for="nummer"
-                                                                             class="required">Nummer</label></br></div>
+                                                                             class="required">Nummer</label></div>
                                         <div class="formControls"><input type="text" name="nummer" id="nummer" value="">
                                         </div>
                                     </div>
                                     <div class="form-block">
                                         <div class="formControlLabel"><label for="telefoon"
-                                                                             class="required">Telefoon</label></br>
-                                        </div>
-                                        <div class="formControls"><input type="text" name="telefoon" id="telefoon"
-                                                                         value=""></div>
+                                                                             class="required">Telefoon</label></div>
+                                        <div class="formControls"><input type="text" required="" name="telefoon"
+                                                                         id="telefoon" value=""></div>
                                     </div>
                                     <div class="form-block">
-                                        <div class="formControlLabel"><label for="email"
-                                                                             class="required">E-mail</label></br>
+                                        <div class="formControlLabel"><label for="email" class="required">E-mail</label>
                                         </div>
-                                        <div class="formControls"><input type="text" name="email" id="email" value="">
+                                        <div class="formControls"><input type="text" required="" name="email" id="email"
+                                                                         value="">
                                         </div>
                                     </div>
                                     <div class="form-block">
-                                        <div class="formControlLabel"><label for="wachtwoord" class="required">Wachtwoord</label></br>
+                                        <div class="formControlLabel"><label for="wachtwoord" required=""
+                                                                             class="required">Wachtwoord</label>
                                         </div>
                                         <div class="formControls"><input type="text" name="wachtwoord" id="wachtwoord"
                                                                          value=""></div>
                                     </div>
                                     <div class="form-block">
-                                        <div class="formControlLabel"><label for="bevestigwachtwoord" class="required">Bevestig
-                                            Wachtwoord</label></br></div>
+                                        <div class="formControlLabel"><label for="bevestigwachtwoord" required=""
+                                                                             class="required">Bevestig
+                                            Wachtwoord</label></div>
                                         <div class="formControls"><input type="text" name="bevestigwachtwoord"
                                                                          id="bevestigwachtwoord" value=""></div>
                                     </div>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="knop">Account aanmaken</button>
-                            </div>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button id="btn-registratie" type="submit" class="knop">Account aanmaken</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -330,9 +330,9 @@
                                                                                      data-toggle="popover"
                                                                                      title="Ingrediënten"></i>
 
-                                            <div id="popover_content_wrapper" style="display: none">
-                                                <div>This is your div content</div>
-                                            </div>
+                                        <div id="popover_content_wrapper" style="display: none">
+                                            <div>This is your div content</div>
+                                        </div>
                                         </p>
                                     </div>
                                     <div class="order">
@@ -1823,12 +1823,22 @@
 
         $(window).scroll(function () {
             $fixedMainmenu();
-            $slideToNewPosSidebars();
-            $slideToNewPosImage();
+            if ($(window).width() >= 920) {
+                $slideToNewPosSidebars();
+                $slideToNewPosImage();
+            }else{
+                $("#mainbody-surround .sidebar").css({"marginTop": 10});
+                $("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
+            }
         });
 
         $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
-            $slideToNewPosImage();
+            if ($(window).width() >= 920) {
+                $slideToNewPosImage();
+            }else{
+                $("#mainbody-surround .sidebar").css({"marginTop": 10});
+                $("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
+            }
         });
 
         function $fixedMainmenu() {
@@ -1841,6 +1851,7 @@
             }
         }
 
+
         function $slideToNewPosSidebars() {
             var el = $("#mainbody-surround .sidebar");
             var elpos = el.offset().top - parseFloat(el.css("marginTop").replace(/auto/, 0));
@@ -1852,6 +1863,9 @@
             else {
                 el.stop().animate({"marginTop": ( y - elpos )}, 500);
             }
+
+            console.log("Y :" + y);
+            console.log("Elpos :" + elpos);
         }
 
         function $slideToNewPosImage() {
