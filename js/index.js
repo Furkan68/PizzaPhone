@@ -64,23 +64,23 @@ jQuery(document).ready(function() {
         $('#slideshow ul').append('<li class="' + (i == 0 ? 'active' : '') + '"></li>');
     }
 
-    /* phone settings */
-    if ($(window).width() >= 761)
-    {
-        $("#bestelmenu").collapse('show');
-        $("#bestelcombomenu").collapse('show'); 
-        $("#bestelbon").collapse('show');   
-        $("#filialen").collapse('show');        
-    }
-    $(window).resize(function() {
-        if ($(window).width() >= 761)
-        {
-            $("#bestelmenu").collapse('show');
-            $("#bestelcombomenu").collapse('show');
-            $("#bestelbon").collapse('show');     
-            $("#filialen").collapse('show');       
-        }
-    });
+    ///* phone settings */
+    //if ($(window).width() >= 761)
+    //{
+    //    $("#bestelmenu").collapse('show');
+    //    $("#bestelcombomenu").collapse('show');
+    //    $("#bestelbon").collapse('show');
+    //    $("#filialen").collapse('show');
+    //}
+    //$(window).resize(function() {
+    //    if ($(window).width() >= 761)
+    //    {
+    //        $("#bestelmenu").collapse('show');
+    //        $("#bestelcombomenu").collapse('show');
+    //        $("#bestelbon").collapse('show');
+    //        $("#filialen").collapse('show');
+    //    }
+    //});
     
     /*$( "#slide1" ).hide();
     $( ".facebook" ).mouseover(function() {
