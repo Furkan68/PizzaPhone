@@ -394,6 +394,7 @@ table, img {
 
 /* MENU */
 #mainmenu .dm-container .menu-block {
+    background-color: #CC2929;
 }
 
 #mainmenu .dm-container .menu-block .dm-menu {
@@ -430,7 +431,7 @@ table, img {
     display: block;
     margin: 0;
     padding: 10px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 20px;
     border-left: 1px solid #F2AFAF;
@@ -460,6 +461,7 @@ table, img {
 #mainmenu .dm-container .usermenu-block {
     position: absolute;
     right: 0;
+    margin-bottom: 20px;
 }
 
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:before {
@@ -484,19 +486,15 @@ table, img {
     background: #8EBD31;
 }
 
-#mainmenu .dm-container .usermenu-block { /*position: absolute; */right: 0; }
+#mainmenu .dm-container .usermenu-block { position: absolute; right: 0; }
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:before { display: none; }
 #mainmenu .dm-container .usermenu-block .dm-menu li.item a {
-    margin: 8px 5px; /*padding: 2px 10px;*/
-    font-size: 14px; font-weight: normal;
+    margin: 8px 5px; padding: 2px 10px;
+    font-size: 12px; font-weight: normal;
     color: #736367; background: #FFFFFF; border: 0 none;
     -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
 }
-@media only screen and (max-width: 400px){
-    .usermenu-block .dm-menu li.item a {
-        padding: 0;font-size: 16px ; width: 150px;
-    }
-}
+
 
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:hover a { color: #FFFFFF; background: #8EBD31; }
 
