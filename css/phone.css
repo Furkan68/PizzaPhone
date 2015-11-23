@@ -59,10 +59,10 @@ Note: look for js/index.js for phone settings with js
 		/*width: 100px;*/
 	}
 	/*new/////////////////////////////////////////////////////*/
-	.dm-container .usermenu-block .dm-menu li.item a {
-		margin: 7px 5px;
-		padding: 8px 15px;
-	}
+	/*.dm-container .usermenu-block .dm-menu li.item a {*/
+		/*margin: 7px 5px;*/
+		/*padding: 8px 15px;*/
+	/*}*/
 
 	#side1, #side2 {
 		width:100%;
@@ -180,7 +180,8 @@ Note: look for js/index.js for phone settings with js
 
 	#mainmenu .dm-container .menu-block 
 	{
-		margin: 0;
+		margin-bottom: 25px;
+		/*margin: 6px;*/
 		padding: 0 2px;
 	}
 

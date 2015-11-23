@@ -489,7 +489,7 @@ table, img {
 #mainmenu .dm-container .usermenu-block { position: absolute; right: 0; }
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:before { display: none; }
 #mainmenu .dm-container .usermenu-block .dm-menu li.item a {
-    margin: 8px 5px; padding: 2px 10px;
+    margin: 3px 5px; padding: 9px 46px;
     font-size: 12px; font-weight: normal;
     color: #736367; background: #FFFFFF; border: 0 none;
     -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
