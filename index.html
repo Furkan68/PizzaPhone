@@ -1843,13 +1843,8 @@
         $(window).scroll(function () {
             $fixedMainmenu();
             if ($(window).width() >= 920) {
-<<<<<<< HEAD
                 $slideElement($("#mainbody-surround .sidebar"));
                 $slideElement($("#pizzasopmaatPane .product-image"));
-=======
-                $slideToNewPosSidebars();
-                $slideToNewPosImage();
->>>>>>> 7019d9a85467e502ea8137e5bd55ba38df72bbce
             } else {
                 $("#mainbody-surround .sidebar").css({"marginTop": 10});
                 $("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
@@ -1859,11 +1854,7 @@
 
         $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
             if ($(window).width() >= 920) {
-<<<<<<< HEAD
                 $slideElement($("#pizzasopmaatPane .product-image"));
-=======
-                $slideToNewPosImage();
->>>>>>> 7019d9a85467e502ea8137e5bd55ba38df72bbce
             } else {
                 $("#mainbody-surround .sidebar").css({"marginTop": 10});
                 //$("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
