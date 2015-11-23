@@ -488,13 +488,13 @@ table, img {
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:before { display: none; }
 #mainmenu .dm-container .usermenu-block .dm-menu li.item a {
     margin: 8px 5px; /*padding: 2px 10px;*/
-    /*font-size: 12px;*/ font-weight: normal;
+    font-size: 14px; font-weight: normal;
     color: #736367; background: #FFFFFF; border: 0 none;
     -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
 }
-@media only screen and (min-width: 400px){
+@media only screen and (max-width: 400px){
     .usermenu-block .dm-menu li.item a {
-        padding: 0;font-size: 16px ; width: 160px;
+        padding: 0;font-size: 16px ; width: 150px;
     }
 }
 

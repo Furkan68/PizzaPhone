@@ -19,7 +19,7 @@ Note: look for js/index.js for phone settings with js
 }
 
 /* b - until width 794 */	
-@media only screen and (min-width: 482px) and (max-width: 920px){
+@media only screen and (min-width: 400px) and (max-width: 920px){
 	/* header */
 	#header {
 		height: 300px;
@@ -84,6 +84,10 @@ Note: look for js/index.js for phone settings with js
 	#mainbody {
 		width:100%;
 		margin: 0 0;
+	}
+	#mainbody .dm-block ul.nav.nav-tabs > li{
+		display: block;
+		width: 100%;
 	}
 	#mainbody .dm-block .pizzas {
 		margin: 0 auto;
