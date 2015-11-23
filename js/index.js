@@ -21,7 +21,9 @@ jQuery(document).ready(function() {
         }
     });
 
+    var position = $('.product-edit').position();
 
+    $('.popover').css({top: position.top});
 
     $('.gestreept tr').addClass('lijn_wit');
     $('.gestreept tr:odd').removeClass('lijn_wit').addClass('lijn_grijs');
