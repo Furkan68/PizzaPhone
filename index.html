@@ -151,7 +151,7 @@
                                         </div>
                                         <div class="formControls">
                                             <input type="text" name="voornaam" id="voornaam"
-                                                                         value="">
+                                                   value="">
                                         </div>
                                     </div>
                                     <div class="form-block">
@@ -326,7 +326,14 @@
                                         <h2 class="product-title">Sesamo e Rucola</h2>
 
                                         <p class="product-description">mozzarella, tomaat, rucola, kerstomaten,
-                                            geitenkaas en sesamzaad op de korst</p>
+                                            geitenkaas en sesamzaad op de korst | <i class="fa fa-pencil product-edit"
+                                                                                     data-toggle="popover"
+                                                                                     title="Ingrediënten"></i>
+
+                                            <div id="popover_content_wrapper" style="display: none">
+                                                <div>This is your div content</div>
+                                            </div>
+                                        </p>
                                     </div>
                                     <div class="order">
                                         <dl>
@@ -338,9 +345,9 @@
                                                 <input type="button" class="quantity-controls quantity-plus"/>
                                                 <input type="button" class="quantity-controls quantity-minus"/>
                                             </dd>
-                                            <dd class="order-button"><input type="submit" name="submit" value="bestel"
-                                                                            class="knop"/>
-                                                <i class="fa fa-cart-plus"></i>
+                                            <dd class="order-button">
+                                                <input type="submit" name="submit" value="bestel"
+                                                       class="knop"/>
                                             </dd>
                                         </dl>
                                         <dl>
@@ -352,8 +359,10 @@
                                                 <input type="button" class="quantity-controls quantity-plus"/>
                                                 <input type="button" class="quantity-controls quantity-minus"/>
                                             </dd>
-                                            <dd class="order-button"><input type="submit" name="submit" value="bestel"
-                                                                            class="knop"/></dd>
+                                            <dd class="order-button">
+                                                <input type="submit" name="submit" value="bestel"
+                                                       class="knop"/>
+                                            </dd>
                                         </dl>
                                         <dl>
                                             <dt class="order-label"><label>Thin M</label></br></dt>
@@ -364,8 +373,10 @@
                                                 <input type="button" class="quantity-controls quantity-plus"/>
                                                 <input type="button" class="quantity-controls quantity-minus"/>
                                             </dd>
-                                            <dd class="order-button"><input type="submit" name="submit" value="bestel"
-                                                                            class="knop"/></dd>
+                                            <dd class="order-button">
+                                                <input type="submit" name="submit" value="bestel"
+                                                       class="knop"/>
+                                            </dd>
                                         </dl>
                                         <dl>
                                             <dt class="order-label"><label>Thin L</label></br></dt>
@@ -376,8 +387,10 @@
                                                 <input type="button" class="quantity-controls quantity-plus"/>
                                                 <input type="button" class="quantity-controls quantity-minus"/>
                                             </dd>
-                                            <dd class="order-button"><input type="submit" name="submit" value="bestel"
-                                                                            class="knop"/></dd>
+                                            <dd class="order-button">
+                                                <input type="submit" name="submit" value="bestel"
+                                                       class="knop"/>
+                                            </dd>
                                         </dl>
                                         <dl>
                                             <dt class="order-label"><label>Deep Pan</label></br></dt>
@@ -388,8 +401,10 @@
                                                 <input type="button" class="quantity-controls quantity-plus"/>
                                                 <input type="button" class="quantity-controls quantity-minus"/>
                                             </dd>
-                                            <dd class="order-button"><input type="submit" name="submit" value="bestel"
-                                                                            class="knop"/></dd>
+                                            <dd class="order-button">
+                                                <input type="submit" name="submit" value="bestel"
+                                                       class="knop"/>
+                                            </dd>
                                         </dl>
                                         <p class="vanaf">vanaf € 11,40</p>
                                     </div>
@@ -1900,8 +1915,8 @@
      $( "#mainbodyDesserts" ).click( function() { $mainbodyDesserts(); });
      $( "#mainbodyDranken" ).click( function() { $mainbodyDranken(); });
      */
-//    })
-//    ;
+    //    })
+    //    ;
 </script>
 </body>
 </html>

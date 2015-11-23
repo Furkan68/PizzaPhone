@@ -5,6 +5,24 @@
 jQuery(document).ready(function() {
     initFancybox();
 
+    $('html').on('click', function(e) {
+        if (typeof $(e.target).data('original-title') == 'undefined' &&
+            !$(e.target).parents().is('.popover.in')) {
+            $('[data-original-title]').popover('hide');
+        }
+    });
+
+    $('.product-edit').popover({
+        placement: 'bottom',
+        container: 'body',
+        html : true,
+        content: function() {
+            return $('#popover_content_wrapper').html();
+        }
+    });
+
+
+
     $('.gestreept tr').addClass('lijn_wit');
     $('.gestreept tr:odd').removeClass('lijn_wit').addClass('lijn_grijs');
 
