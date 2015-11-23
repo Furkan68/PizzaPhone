@@ -498,7 +498,7 @@ p.vanaf {
 }
 #bestelbon {  }
 #bestelbon #bestelbon-inner { margin: 0 -15px 5px; padding-top: 50px; box-shadow: 0 2px 3px;
-    background: url(../images/template_images/bon.png) no-repeat;
+    background: url(../images/template_images/bon1.png) no-repeat;
 }
 #bestelbon #bestelbon-inner p.bestelbon-item { margin: 0; padding: 2px 15px; background: #FFFFFF; }
 #bestelbon .bon-aantal { float: left; width: 8px; margin-right: 4px; }
