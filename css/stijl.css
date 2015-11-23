@@ -148,7 +148,7 @@ table, img { border: 0px; }
 /* LOGO */
 #mainmenu .dm-container .logo-block { position: absolute; left: 0; width: 200px; height: 40px; overflow: hidden; }
 #mainmenu .dm-container .logo-block #dm-logo2 {
-    position: relative; display: block; width: 32px; height: 32px; margin-top: -34px;
+    position: relative; /*display: block;*/ width: 32px; height: 32px; margin-top: -34px;
     background: url(../images/template_images/logo-mainmenu-fixed.png) 0 0 no-repeat;
     -webkit-transition: all 0.2s ease-in; -moz-transition: all 0.2s ease-in;
     -ms-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in;
@@ -191,14 +191,20 @@ table, img { border: 0px; }
 #mainmenu .dm-container .menu-block .dm-menu li.item.active a { color: #FFFFFF; }
 
 /* USERMENU */
-#mainmenu .dm-container .usermenu-block { position: absolute; right: 0; }
+#mainmenu .dm-container .usermenu-block { /*position: absolute; */right: 0; }
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:before { display: none; }
 #mainmenu .dm-container .usermenu-block .dm-menu li.item a {
-    margin: 8px 5px; padding: 2px 10px;
-    font-size: 12px; font-weight: normal;
+    margin: 8px 5px; /*padding: 2px 10px;*/
+    /*font-size: 12px;*/ font-weight: normal;
     color: #736367; background: #FFFFFF; border: 0 none;
     -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
 }
+@media only screen and (min-width: 400px){
+    .usermenu-block .dm-menu li.item a {
+        padding: 0;font-size: 16px ; width: 160px;
+    }
+}
+
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:hover a { color: #FFFFFF; background: #8EBD31; }
 
 #mainmenu .dm-container .usermenu-block #inloggenModal,
@@ -498,8 +504,15 @@ p.vanaf {
 }
 #bestelbon {  }
 #bestelbon #bestelbon-inner { margin: 0 -15px 5px; padding-top: 50px; box-shadow: 0 2px 3px;
-    background: url(../images/template_images/bon1.png) no-repeat;
+    background: url(../images/template_images/bon.png) no-repeat;
 }
+@media only screen and (min-width: 400px){
+    #bestelbon #bestelbon-inner{
+        background: url(../images/template_images/bon.png)repeat;
+    }
+}
+
+
 #bestelbon #bestelbon-inner p.bestelbon-item { margin: 0; padding: 2px 15px; background: #FFFFFF; }
 #bestelbon .bon-aantal { float: left; width: 8px; margin-right: 4px; }
 #bestelbon .bon-naam { display: inline-block; width: 100px; }

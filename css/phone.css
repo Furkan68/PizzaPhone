@@ -141,8 +141,6 @@ Note: look for js/index.js for phone settings with js
 		margin: 0 0 8px;
 	}	
 }
-
-
 /* c - until width 481 */
 @media only screen and (max-width: 481px){
 	#header {
