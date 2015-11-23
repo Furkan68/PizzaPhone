@@ -351,11 +351,15 @@ table, img {
 }
 
 #mainmenu .dm-container .logo-block #dm-logo2 {
+<<<<<<< HEAD
     position: relative;
     display: block;
     width: 32px;
     height: 32px;
     margin-top: -34px;
+=======
+    position: relative; /*display: block;*/ width: 32px; height: 32px; margin-top: -34px;
+>>>>>>> 9b92164a6574abd9912ed711b47ffe46420d392f
     background: url(../images/template_images/logo-mainmenu-fixed.png) 0 0 no-repeat;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
@@ -455,6 +459,7 @@ table, img {
 }
 
 /* USERMENU */
+<<<<<<< HEAD
 #mainmenu .dm-container .usermenu-block {
     position: absolute;
     right: 0;
@@ -481,6 +486,23 @@ table, img {
     color: #FFFFFF;
     background: #8EBD31;
 }
+=======
+#mainmenu .dm-container .usermenu-block { /*position: absolute; */right: 0; }
+#mainmenu .dm-container .usermenu-block .dm-menu li.item:before { display: none; }
+#mainmenu .dm-container .usermenu-block .dm-menu li.item a {
+    margin: 8px 5px; /*padding: 2px 10px;*/
+    /*font-size: 12px;*/ font-weight: normal;
+    color: #736367; background: #FFFFFF; border: 0 none;
+    -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+}
+@media only screen and (min-width: 400px){
+    .usermenu-block .dm-menu li.item a {
+        padding: 0;font-size: 16px ; width: 160px;
+    }
+}
+
+#mainmenu .dm-container .usermenu-block .dm-menu li.item:hover a { color: #FFFFFF; background: #8EBD31; }
+>>>>>>> 9b92164a6574abd9912ed711b47ffe46420d392f
 
 #mainmenu .dm-container .usermenu-block #inloggenModal,
 #mainmenu .dm-container .usermenu-block #registrerenModal {
@@ -1255,6 +1277,7 @@ p.vanaf {
     border-radius: 16px;
     background: #FFF1D6;
 }
+<<<<<<< HEAD
 
 #bestelbon {
 }
@@ -1265,6 +1288,23 @@ p.vanaf {
     box-shadow: 0 2px 3px;
     background: url(../images/template_images/bon1.png) no-repeat;
 }
+=======
+#bestelbon {  }
+#bestelbon #bestelbon-inner { margin: 0 -15px 5px; padding-top: 50px; box-shadow: 0 2px 3px;
+    background: url(../images/template_images/bon.png) no-repeat;
+}
+@media only screen and (min-width: 400px){
+    #bestelbon #bestelbon-inner{
+        background: url(../images/template_images/bon.png)repeat;
+    }
+}
+
+
+#bestelbon #bestelbon-inner p.bestelbon-item { margin: 0; padding: 2px 15px; background: #FFFFFF; }
+#bestelbon .bon-aantal { float: left; width: 8px; margin-right: 4px; }
+#bestelbon .bon-naam { display: inline-block; width: 100px; }
+#bestelbon .bon-prijs { float: right; display: inline-block; max-width: 38px; overflow: hidden; }
+>>>>>>> 9b92164a6574abd9912ed711b47ffe46420d392f
 
 #bestelbon #bestelbon-inner p.bestelbon-item {
     margin: 0;
