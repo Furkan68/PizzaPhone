@@ -1188,11 +1188,11 @@ table, img {
     background: transparent;
 }
 
-.product-details .product-description .fa-pencil {
+.product-details .product-description .fa {
     color: #76dd76;
 }
 
-.product-details .product-description .fa-pencil:hover {
+.product-details .product-description .fa:hover {
     color: #CC2929;
 }
 
@@ -2347,5 +2347,17 @@ form > div:nth-child(1) > ul > li > label input[type='radio'] {
 }
 
 .ingredients{
+    display: none;
+    border-top: thin dotted #0f0f0f;
+    padding: 5px 0 0 5px;
     margin-top: 5px;
+}
+
+.ingredients table tbody tr td{
+    text-align: left;
+    padding: 2px;
+}
+
+.ingredients table tr td input{
+    float: left;
 }

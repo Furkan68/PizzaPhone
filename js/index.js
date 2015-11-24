@@ -19,8 +19,17 @@ jQuery(document).ready(function () {
         var c = b.attr('pizza-no');
         if (a == c) {
             b.toggle();
+            $( this ).toggleClass(function() {
+                if ( $( this ).is( ".fa-plus" ) ) {
+                    return "fa-minus";
+                } else {
+                    return "fa-plus";
+                }
+            });
+            //$( this ).toggleClass( "fa-minus" );
         }
     });
+
 
 
     $('.gestreept tr').addClass('lijn_wit');
