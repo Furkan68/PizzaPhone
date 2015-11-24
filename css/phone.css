@@ -282,6 +282,10 @@ Note: look for js/index.js for phone settings with js
 	ul.dm-menu li.item {
 		margin: 0 0 8px;
 	}
+
+	#mainmenu .dm-container .usermenu-block .dm-menu li.item a {
+		padding: 9px 46px;
+	}
 }
 
 /*  d - other sizes */
@@ -295,6 +299,7 @@ Note: look for js/index.js for phone settings with js
 }
 @media only screen and (min-width: 481px) and (max-width: 524px){
 	#showcase .dm-container .dm-block {
+		display: none;
 		height:128px;
 	}
 }
