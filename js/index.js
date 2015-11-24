@@ -11,32 +11,15 @@ jQuery(document).ready(function () {
         }
     });
 
-    $('.product-edit').popover({
-        placement: 'bottom',
-        container: 'body',
-        html: true,
-        content: function () {
-            return $('#popover_content_wrapper').html();
-        }
-    });
+    //$('.product-edit').popover({
+    //    placement: 'right',
+    //    container: 'body',
+    //    html: true,
+    //    content: function () {
+    //        return $('#popover_content_wrapper').html();
+    //    }
+    //});
 
-    $('.product').mouseover(function () {
-        var p = $(this).find('i');
-        var offset = p.offset();
-        $('.popover').offset({top: offset.top, left: offset.left});
-    });
-
-    $('.product').mouseout(function () {
-        var p = $(this).find('i');
-        var offset = p.offset();
-        $('.popover').offset({top: offset.top, left: offset.left});
-    });
-
-    $('.product').hover(function(){
-        var p = $(this).find('i');
-        var offset = p.offset();
-        $('.popover').offset({top: offset.top, left: offset.left});
-    });
 
     $('.gestreept tr').addClass('lijn_wit');
     $('.gestreept tr:odd').removeClass('lijn_wit').addClass('lijn_grijs');

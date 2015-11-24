@@ -1852,10 +1852,10 @@
                 $("#mainbody-surround #side2").css({"marginTop": 10});
                 $("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
             }
-
         });
 
         $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
+            console.log(true);
             if ($(window).width() >= 920) {
                 $slideElement($("#pizzasopmaatPane .product-image"));
             } else {
