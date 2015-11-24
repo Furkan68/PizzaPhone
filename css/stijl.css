@@ -191,7 +191,7 @@ body {
 .dm-container {
     position: relative;
     width: 960px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 0;
 }
 
@@ -337,8 +337,8 @@ table, img {
 #mainmenu .dm-container .dm-block {
     position: relative;
     display: inline-block;
-    margin: 6 1px;
-    padding: 0 15px;
+    margin: 2px;
+    padding: 0px;
 }
 
 /* LOGO */
@@ -489,9 +489,19 @@ table, img {
     background: #8EBD31;
 }
 
+<<<<<<< Updated upstream
 #mainmenu .dm-container .usermenu-block {
     position: absolute;
     right: 0;
+=======
+#mainmenu .dm-container .usermenu-block { position: absolute; right: 0; }
+#mainmenu .dm-container .usermenu-block .dm-menu li.item:before { display: none; }
+#mainmenu .dm-container .usermenu-block .dm-menu li.item a {
+    margin: 3px 5px; padding: 7px 25px;
+    font-size: 12px; font-weight: normal;
+    color: #736367; background: #FFFFFF; border: 0 none;
+    -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;
+>>>>>>> Stashed changes
 }
 
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:before {
