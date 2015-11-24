@@ -1424,6 +1424,7 @@ p.vanaf {
 
 #footer {
     position: relative;
+    margin-bottom: -10px;
 }
 
 #footer .dm-container {
