@@ -1,13 +1,12 @@
 /**
- * 
+ *
  */
 
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
     initFancybox();
 
-    $('html').on('click', function(e) {
-        if (typeof $(e.target).data('original-title') == 'undefined' &&
-            !$(e.target).parents().is('.popover.in')) {
+    $('html').on('click', function (e) {
+        if (typeof $(e.target).data('original-title') == 'undefined' && !$(e.target).parents().is('.popover.in')) {
             $('[data-original-title]').popover('hide');
         }
     });
@@ -15,36 +14,50 @@ jQuery(document).ready(function() {
     $('.product-edit').popover({
         placement: 'bottom',
         container: 'body',
-        html : true,
-        content: function() {
+        html: true,
+        content: function () {
             return $('#popover_content_wrapper').html();
         }
     });
 
-    if($('.product').is(":hover")){
-        
-    }
+    $('.product').mouseover(function () {
+        var p = $(this).find('i');
+        var offset = p.offset();
+        $('.popover').offset({top: offset.top, left: offset.left});
+    });
+
+    $('.product').mouseout(function () {
+        var p = $(this).find('i');
+        var offset = p.offset();
+        $('.popover').offset({top: offset.top, left: offset.left});
+    });
+
+    $('.product').hover(function(){
+        var p = $(this).find('i');
+        var offset = p.offset();
+        $('.popover').offset({top: offset.top, left: offset.left});
+    });
 
     $('.gestreept tr').addClass('lijn_wit');
     $('.gestreept tr:odd').removeClass('lijn_wit').addClass('lijn_grijs');
 
-    $('.swap_image').mouseover(function() {
+    $('.swap_image').mouseover(function () {
         img = $(this);
         imgsrc = img.attr('src');
         newImgsrc = imgsrc.replace('.jpg', 'Over.jpg');
         img.attr('src', newImgsrc);
     });
-    $('.swap_image').mouseout(function() {
+    $('.swap_image').mouseout(function () {
         img = $(this);
         imgsrc = img.attr('src');
         newImgsrc = imgsrc.replace('Over.jpg', '.jpg');
         img.attr('src', newImgsrc);
     });
 
-    $("#frmNewsLetter  input[type='submit']").click(function() {
+    $("#frmNewsLetter  input[type='submit']").click(function () {
         var $form = $("#frmNewsLetter");
         $form.parent('div').find('div.info').remove();
-        $.post($form.attr('action'), $form.serialize(), function(data) {
+        $.post($form.attr('action'), $form.serialize(), function (data) {
             var $message = null;
             if (data.Code === 400) {
                 $message = $('<div class="info error"></div>').text(data.Message);
@@ -58,27 +71,29 @@ jQuery(document).ready(function() {
         });
         return false;
     });
-    
+
     /* SLIDER */
-    
+
     var interval = 4000;
+
     function slide() {
         $('#slideshow > div:first')
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo('#slideshow');
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
         $('#slideshow ul li').removeClass('active');
         $('#slideshow ul li:eq(' + index + ')').addClass('active');
         index = index < maxindex - 1 ? index + 1 : 0;
-        setTimeout(slide,interval)
+        setTimeout(slide, interval)
     }
+
     $("#slideshow > div:gt(0)").hide();
     var index = 1;
     var maxindex = $('#slideshow > div').length;
-    $(function() {
-        setTimeout(slide,interval);
+    $(function () {
+        setTimeout(slide, interval);
     });
     for (var i = 0; i < maxindex; i++) {
         $('#slideshow ul').append('<li class="' + (i == 0 ? 'active' : '') + '"></li>');
@@ -101,9 +116,9 @@ jQuery(document).ready(function() {
     //        $("#filialen").collapse('show');
     //    }
     //});
-    
+
     /*$( "#slide1" ).hide();
-    $( ".facebook" ).mouseover(function() {
-      $( "#slide1" ).toggle( "fade" );
-    });*/
+     $( ".facebook" ).mouseover(function() {
+     $( "#slide1" ).toggle( "fade" );
+     });*/
 });
