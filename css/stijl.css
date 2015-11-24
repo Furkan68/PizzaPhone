@@ -2345,3 +2345,7 @@ form > div:nth-child(1) > ul > li > label input[type='radio'] {
     float: right;
     font-weight: bold;
 }
+
+.ingredients{
+    margin-top: 5px;
+}

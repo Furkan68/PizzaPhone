@@ -11,14 +11,16 @@ jQuery(document).ready(function () {
         }
     });
 
-    //$('.product-edit').popover({
-    //    placement: 'right',
-    //    container: 'body',
-    //    html: true,
-    //    content: function () {
-    //        return $('#popover_content_wrapper').html();
-    //    }
-    //});
+    $('.product-edit').click(function () {
+        var el = $(this);
+        var a = el.attr('pizza-no');
+        var parent = el.parent().closest('.product-details');
+        var b = parent.find('.ingredients');
+        var c = b.attr('pizza-no');
+        if (a == c) {
+            b.toggle();
+        }
+    });
 
 
     $('.gestreept tr').addClass('lijn_wit');
