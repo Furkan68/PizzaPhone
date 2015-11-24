@@ -1846,7 +1846,6 @@
                 $slideElement($("#mainbody-surround .sidebar"));
                 $slideElement($("#pizzasopmaatPane .product-image"));
             } else {
-                $("#mainbody-surround .sidebar").css({"marginTop": 10});
                 $("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
             }
 
@@ -1856,8 +1855,7 @@
             if ($(window).width() >= 920) {
                 $slideElement($("#pizzasopmaatPane .product-image"));
             } else {
-                $("#mainbody-surround .sidebar").css({"marginTop": 10});
-                //$("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
+                $("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
             }
         });
 
