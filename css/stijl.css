@@ -193,6 +193,7 @@ body {
     width: 960px;
     margin: 10px auto;
     padding: 0;
+
 }
 
 .dm-block {
@@ -201,6 +202,7 @@ body {
     padding: 15px;
     box-sizing: border-box;
     vertical-align: top;
+
 }
 
 /* ***** TYPOGRAPHY ***** */
@@ -291,6 +293,7 @@ table, img {
     height: 90px;
     margin: 46px 10px 0 10px;
     text-align: right;
+    padding: 0;
 }
 
 /* LOGO BLOCK */
@@ -338,7 +341,7 @@ table, img {
     position: relative;
     display: inline-block;
     margin: 2px;
-    padding: 0px;
+    padding: 0;
 }
 
 /* LOGO */
@@ -464,7 +467,8 @@ table, img {
 #mainmenu .dm-container .usermenu-block {
     position: absolute;
     right: 0;
-    margin-bottom: 20px;
+    /*change from 20px to 0px*/
+    margin-bottom: 0;
 }
 
 #mainmenu .dm-container .usermenu-block .dm-menu li.item:before {
@@ -575,6 +579,7 @@ table, img {
 }
 
 #showcase .dm-container {
+
 }
 
 #showcase .dm-container .dm-block {
@@ -588,6 +593,7 @@ table, img {
     -moz-border-radius: 0 0 16px 16px;
     border-radius: 0 0 16px 16px;
     background: url(../images/template_images/showcase_bg.jpg) #FFF1D6;
+
 }
 
 /* Slideshow Kasper */
@@ -597,6 +603,7 @@ table, img {
     padding: 0;
     width: 560px;
     height: 100px;
+
 }
 
 #slideshow > div {
