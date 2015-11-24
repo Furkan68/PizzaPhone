@@ -183,7 +183,11 @@ Note: look for js/index.js for phone settings with js
 		margin-bottom: 25px;
 		/*margin: 6px;*/
 		padding: 0 2px;
+
 	}
+	/*#mainmenu . dm-container .usermenu-block{*/
+		/*background-color: blue;*/
+	/*}*/
 
 	#showcase {
 		display: none;
@@ -192,6 +196,7 @@ Note: look for js/index.js for phone settings with js
 	#side1, #side2 {
 		width:100%;
 		margin-bottom: 10px;
+		margin-top: 40px;
 	}
 	#side2 {
 		margin-top: 10px;
