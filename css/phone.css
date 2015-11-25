@@ -152,7 +152,7 @@ Note: look for js/index.js for phone settings with js
 	}	
 }
 /* c - until width 481 */
-@media only screen and (max-width: 481px){
+@media only screen and (max-width: 920px){
 	#header {
 		height: 300px;
 	}
