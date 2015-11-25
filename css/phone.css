@@ -151,7 +151,7 @@ Note: look for js/index.js for phone settings with js
 		margin: 0 0 8px;
 	}	
 }
-/* c - until width 481 */
+/*/!* c - until width 481 *!/I change it to 920 px so it can be responsive to all sizes */
 @media only screen and (max-width: 920px){
 	#header {
 		height: 300px;
