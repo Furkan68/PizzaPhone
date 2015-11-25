@@ -721,6 +721,12 @@ table, img {
     text-align: center;
     border-bottom: 2px solid #8EBD31;
 }
+/*test to remove the tab pizza size */
+@media only screen and (max-width: 700px) {
+    #mainbody .dm-block ul.nav.nav-tabs{
+        display: none;
+    }
+}
 
 #mainbody .dm-block ul.nav.nav-tabs > li {
     float: none;
