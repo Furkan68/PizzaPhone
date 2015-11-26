@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:fb="http://ogp.me/ns/fb#" xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
 <head>
     <meta name="keywords" content="pizza,pizzaphone,pizza antwerpen,meeneempizza,pasta,pizzahut,pizza mortsel,salads"/>
     <meta name="google-site-verification" content="V0i1oQ9ojH3d9uUw0uDQsO8F_Bj5dmIWNUr5YN-is3w"/>
@@ -333,7 +333,6 @@
                                         <h2 class="product-title">Sesamo e Rucola</h2>
 
                                         <p class="product-description">mozzarella, tomaat, rucola, kerstomaten,
-<<<<<<< Updated upstream
                                             geitenkaas en sesamzaad op de korst | <i class="fa fa-plus product-edit"
                                                                                      pizza-no="1"></i>
 
@@ -364,17 +363,8 @@
                                             <tr class="lijn_wit"></tr>
                                             </tbody>
                                         </table>
-
-
-                                            geitenkaas en sesamzaad op de korst | <i class="fa fa-pencil product-edit"
-                                                                                     pizza-no="1"></i>
-
-
-                                        <div class="ingredients" pizza-no="1" style="display: none">
-                                            This is your div content
-
                                         </div>
-                                        <!--</p>-->
+                                        </p>
                                     </div>
                                     <div class="order">
                                         <dl>
@@ -458,7 +448,6 @@
                                         <h2 class="product-title">Rucola</h2>
 
                                         <p class="product-description">mozzarella, tomaat, rucola, kerstomaten,
-
                                             geitenkaas en sesamzaad op de korst | <i class="fa fa-plus product-edit"
                                                                                      pizza-no="2"></i>
 
@@ -489,14 +478,8 @@
                                                 <tr class="lijn_wit"></tr>
                                                 </tbody>
                                             </table>
-                                   geitenkaas en sesamzaad op de korst | <i class="fa fa-pencil product-edit"
-                                                                                     pizza-no="2"></i>
-
-                                        <div class="ingredients" pizza-no="2" style="display: none">
-                                            This is your div content
-
                                         </div>
-                                       
+                                        </p>
                                     </div>
                                     <div class="order">
                                         <dl>
@@ -1924,10 +1907,10 @@
                 $("#mainbody-surround #side2").css({"marginTop": 10});
                 $("#pizzasopmaatPane .product-image").stop().animate({"marginTop": 0}, 500);
             }
-
         });
 
         $(document).on("shown.bs.tab", "a[data-toggle='tab']", function (e) {
+            console.log(true);
             if ($(window).width() >= 920) {
                 $slideElement($("#pizzasopmaatPane .product-image"));
             } else {
