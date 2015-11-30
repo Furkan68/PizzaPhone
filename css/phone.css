@@ -24,19 +24,20 @@ Note: look for js/index.js for phone settings with js
 		display: none;
 	}
 }
-/*side2 box1 and box2 both hide in small devise*/
-@media only screen and (max-width: 750px) {
-	#side2 {
-		display: none;
-	}
-}
+/*/!*side2 box1 and box2 both hide in small devise*!/*/
+/*@media only screen and (max-width: 750px) {*/
+	/*#side2 {*/
+		/*display: none;*/
+	/*}*/
+/*}*/
 
 
 /* b - until width 794 */	
 @media only screen and (min-width: 400px) and (max-width: 920px){
 	/* header */
 	#header {
-		height: 300px;
+		/*height: 300px;*/
+		height: 150px;
 	}
 	#header:after {
 		height: 200px;
@@ -132,6 +133,7 @@ Note: look for js/index.js for phone settings with js
 	#footer .dm-container .dm-block #dm-logo {
 		width:150px;
 		height: 121.5px;
+		height: 50px;
 		display: inline-block;
 		background-size: cover;
 	}
@@ -168,7 +170,8 @@ Note: look for js/index.js for phone settings with js
 /*/!* c - until width 481 *!/I change it to 920 px so it can be responsive to all sizes */
 @media only screen and (max-width: 920px){
 	#header {
-		height: 300px;
+		height: 222px;
+		/*height: 300px;*/
 	}
 	#header:after {
 		height: 200px;
@@ -176,6 +179,7 @@ Note: look for js/index.js for phone settings with js
 	#header .dm-container .dm-block.logo-block {
 		float:none !important;
 		width: 100%;
+
 	}
 	#header .dm-container .dm-block.logo-block #dm-logo {
 		width: 100%;
@@ -359,8 +363,8 @@ Note: look for js/index.js for phone settings with js
 }
 /* to remove the tab of pizza size*/
 
-@media only screen and (max-width: 750px) {
-	#mainbody .dm-block ul.nav.nav-tabs{
-		display: none;
-	}
-}
+/*@media only screen and (max-width: 750px) {*/
+	/*#mainbody .dm-block ul.nav.nav-tabs{*/
+		/*display: none;*/
+	/*}*/
+/*}*/
