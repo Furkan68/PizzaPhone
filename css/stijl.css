@@ -343,59 +343,59 @@ table, img {
     margin: 2px;
     padding: 0;
 }
-@media screen and (max-width: 920px){
 
+@media screen and (max-width: 920px) {
 
-/* LOGO */
-#mainmenu .dm-container .logo-block {
-    /*position: absolute;*/
-    float: left;
-    /*left: 0;*/
-    width: 200px;
-    /*height: 40px;*/
-    overflow: hidden;
-}
+    /* LOGO */
+    #mainmenu .dm-container .logo-block {
+        /*position: absolute;*/
+        float: left;
+        /*left: 0;*/
+        width: 200px;
+        /*height: 40px;*/
+        overflow: hidden;
+    }
 
-#mainmenu .dm-container .logo-block #dm-logo2 {
-    position: relative;
-    display: block;
-    width: 32px;
-    height: 32px;
-    /*margin-top: -34px;*/
-    background: url(../images/template_images/logo-mainmenu-fixed.png) 0 0 no-repeat;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
+    #mainmenu .dm-container .logo-block #dm-logo2 {
+        position: relative;
+        display: block;
+        width: 32px;
+        height: 32px;
+        /*margin-top: -34px;*/
+        background: url(../images/template_images/logo-mainmenu-fixed.png) 0 0 no-repeat;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
 
-#mainmenu .dm-container .logo-block #dm-logo2:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 32px;
-    height: 32px;
-    bottom: 0;
-    left: 0;
-    background: url(../images/template_images/logo-mainmenu-fixed-2.png) 0 0 no-repeat;
+    #mainmenu .dm-container .logo-block #dm-logo2:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 32px;
+        bottom: 0;
+        left: 0;
+        background: url(../images/template_images/logo-mainmenu-fixed-2.png) 0 0 no-repeat;
 
-    -webkit-animation: tel ease-out 16s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-transform-origin: 50% 50%; /* Chrome 4+, Safari 4+, Opera 15+ */
-    -moz-animation: tel ease-out 16s;
-    -moz-animation-iteration-count: infinite;
-    -moz-transform-origin: 50% 50%; /* Firefox 5+ */
-    -o-animation: tel ease-out 16s;
-    -o-animation-iteration-count: infinite;
-    -o-transform-origin: 50% 50%; /* Opera 12+ */
-    -ms-animation: tel ease-out 16s;
-    -ms-animation-iteration-count: infinite;
-    -ms-transform-origin: 50% 50%; /* IE */
-    animation: tel ease-out 16s;
-    animation-iteration-count: infinite;
-    transform-origin: 50% 50%; /* Firefox 16+, Opera 12.1+, IE 10+ */
-}
+        -webkit-animation: tel ease-out 16s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-transform-origin: 50% 50%; /* Chrome 4+, Safari 4+, Opera 15+ */
+        -moz-animation: tel ease-out 16s;
+        -moz-animation-iteration-count: infinite;
+        -moz-transform-origin: 50% 50%; /* Firefox 5+ */
+        -o-animation: tel ease-out 16s;
+        -o-animation-iteration-count: infinite;
+        -o-transform-origin: 50% 50%; /* Opera 12+ */
+        -ms-animation: tel ease-out 16s;
+        -ms-animation-iteration-count: infinite;
+        -ms-transform-origin: 50% 50%; /* IE */
+        animation: tel ease-out 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%; /* Firefox 16+, Opera 12.1+, IE 10+ */
+    }
 }
 
 /* MENU */
@@ -721,7 +721,6 @@ table, img {
     text-align: center;
     border-bottom: 2px solid #8EBD31;
 }
-
 
 #mainbody .dm-block ul.nav.nav-tabs > li {
     float: none;
@@ -1619,7 +1618,6 @@ p.vanaf {
     border-bottom: 28px solid;
 }
 
-
 /*-----------------------**** small dives ****------------------- */
 
 .box1 .title, .box2 .title, .box3 .title {
@@ -2351,18 +2349,18 @@ form > div:nth-child(1) > ul > li > label input[type='radio'] {
     font-weight: bold;
 }
 
-.ingredients{
+.ingredients {
     display: none;
     border-top: thin dotted #0f0f0f;
     padding: 5px 0 0 5px;
     margin-top: 5px;
 }
 
-.ingredients table tbody tr td{
+.ingredients table tbody tr td {
     text-align: left;
     padding: 2px;
 }
 
-.ingredients table tr td input{
+.ingredients table tr td input {
     float: left;
 }
