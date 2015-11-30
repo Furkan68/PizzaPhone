@@ -325,7 +325,7 @@ Note: look for js/index.js for phone settings with js
 		/*height:128px;*/
 	}
 }
-@media only screen and (min-width: 400px) and (max-width: 630px){
+@media only screen and (min-width: 481px) and (max-width: 630px){
 	#showcase .dm-container .dm-block {
 		height:148px;
 	}
