@@ -346,7 +346,8 @@ table, img {
 
 /* LOGO */
 #mainmenu .dm-container .logo-block {
-    position: absolute;
+    /*position: absolute;*/
+    float: left;
     left: 0;
     width: 200px;
     height: 40px;
@@ -358,11 +359,7 @@ table, img {
     display: block;
     width: 32px;
     height: 32px;
-    margin-top: -34px;
-    position: relative; /*display: block;*/
-    width: 32px;
-    height: 32px;
-    margin-top: -34px;
+    /*margin-top: -34px;*/
     background: url(../images/template_images/logo-mainmenu-fixed.png) 0 0 no-repeat;
     -webkit-transition: all 0.2s ease-in;
     -moz-transition: all 0.2s ease-in;
