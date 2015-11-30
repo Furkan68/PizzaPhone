@@ -36,8 +36,9 @@ Note: look for js/index.js for phone settings with js
 @media only screen and (min-width: 400px) and (max-width: 920px){
 	/* header */
 	#header {
-		/*height: 300px;*/
-		height: 150px;
+		height: 300px;
+		display: none;
+
 	}
 	#header:after {
 		height: 200px;
@@ -129,6 +130,7 @@ Note: look for js/index.js for phone settings with js
 	#footer .dm-container .dm-block {
     	display: inline-block;
     	width: 100%;
+
 	}
 	#footer .dm-container .dm-block #dm-logo {
 		width:150px;
@@ -167,11 +169,11 @@ Note: look for js/index.js for phone settings with js
 		margin: 0 0 8px;
 	}	
 }
+
 /*/!* c - until width 481 *!/I change it to 920 px so it can be responsive to all sizes */
 @media only screen and (max-width: 920px){
 	#header {
-		height: 222px;
-		/*height: 300px;*/
+		height: 300px;
 	}
 	#header:after {
 		height: 200px;
