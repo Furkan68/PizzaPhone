@@ -1557,6 +1557,7 @@ p.vanaf {
     -moz-border-radius: 4px;
     border-radius: 4px;
     border: 1px solid #739928;
+    width: 100%;
 }
 
 #footer .dm-container .dm-block form dd input.knop {
