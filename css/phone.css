@@ -18,6 +18,18 @@ Note: look for js/index.js for phone settings with js
 	}
 }
 
+
+@media only screen and (max-width: 750px) {
+	#side1 .box1{
+		display: none;
+	}
+}
+@media only screen and (max-width: 750px) {
+	#side2 .box1{
+		display: none;
+	}
+}
+
 /* b - until width 794 */	
 @media only screen and (min-width: 400px) and (max-width: 920px){
 	/* header */
@@ -212,7 +224,8 @@ Note: look for js/index.js for phone settings with js
 	}
 	#mainbody {
 		width:100%;
-		margin: 0 0;
+		/*margin: 0 0;*/
+		margin-top: 10px;
 	}
 	#mainbody .dm-block .pizzas .product {
 		display: block;
@@ -340,5 +353,12 @@ Note: look for js/index.js for phone settings with js
 	#mainbody .dm-block .pizzas .product:nth-of-type(odd)
 	{
 		margin-right: auto;
+	}
+}
+/* to remove the tab of pizza size*/
+
+@media only screen and (max-width: 750px) {
+	#mainbody .dm-block ul.nav.nav-tabs{
+		display: none;
 	}
 }
