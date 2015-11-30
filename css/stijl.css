@@ -343,14 +343,16 @@ table, img {
     margin: 2px;
     padding: 0;
 }
+@media screen and (max-width: 920px){
+
 
 /* LOGO */
 #mainmenu .dm-container .logo-block {
     /*position: absolute;*/
     float: left;
-    left: 0;
+    /*left: 0;*/
     width: 200px;
-    height: 40px;
+    /*height: 40px;*/
     overflow: hidden;
 }
 
@@ -393,6 +395,7 @@ table, img {
     animation: tel ease-out 16s;
     animation-iteration-count: infinite;
     transform-origin: 50% 50%; /* Firefox 16+, Opera 12.1+, IE 10+ */
+}
 }
 
 /* MENU */
