@@ -26,7 +26,7 @@ jQuery(document).ready(function () {
     });
 
     $('#toggle-bestelbon').click(function(){
-        $('#box-2').slideToggle("fast");
+        $('#box-2').toggle();
     });
 
     $(window).resize(function () {

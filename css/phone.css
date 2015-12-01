@@ -426,20 +426,20 @@ Note: look for js/index.js for phone settings with js
 }
 
 @media only screen and (max-width: 920px) {
-    #box-2{
+    #box-2 {
         margin: 0;
         border-top: none;
         border-bottom: 38px solid;
         z-index: 1000;
     }
 
-    .navbar{
+    .navbar {
         margin-bottom: 0 !important;
     }
 
-    #bestelbon-line{
-        text-align: center;
-        height: 46px;
+    #bestelbon-line {
+        text-align: right;
+        height: 36px;
         width: 100%;
         padding: 5px 10px 5px 10px;
         margin-bottom: 15px;
@@ -448,21 +448,22 @@ Note: look for js/index.js for phone settings with js
         display: block;
     }
 
-    #toggle-bestelbon{
+    #toggle-bestelbon {
         position: relative;
+        font-size: 12px;
+        padding: 2px !important;
     }
 
     .bestelbon-item,
-    #total-price-text
-    {
+    #total-price-text {
         color: #0f0f0f;
     }
 
-    #total-price-text{
+    #total-price-text {
         padding: 10px 15px 10px 15px;
     }
 
-    #bestelbon{
+    #bestelbon {
         margin-top: -15px;
     }
 
