@@ -352,6 +352,7 @@ table, img {
     border-color: #8EBD31;
 }
 
+#mainmenu .navbar-nav li.open a,
 #mainmenu .navbar-nav li.open .dropdown-menu {
     background-color: #CC2929;
 }
@@ -505,6 +506,20 @@ table, img {
     color: #FCD8D8;
 }
 
+@media screen and (max-width: 768px) {
+    #mainmenu .navbar-right li button {
+        margin: 0 5% 5px 5%;
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #mainmenu .navbar-nav li{
+        border-left: none;
+
+        border-bottom: 1px solid  #CC2929;
+    }
+}
+
 #mainmenu .navbar-nav li:first-of-type a {
     border: 0 none;
 }
@@ -520,11 +535,11 @@ table, img {
 
 #mainmenu .navbar-nav li:hover a,
 #mainmenu .navbar-nav li.open .dropdown-menu li:hover a,
-#mainmenu .navbar-nav li.open a,
 #mainmenu .navbar-nav li.active a {
     background-color: #8EBD31;
     color: #FFFFFF;
 }
+
 
 /*!* USERMENU *!*/
 
