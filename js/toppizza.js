@@ -1,54 +1,54 @@
 jQuery(document).ready(function() {
 
-    $('.pizzalijst').hide();
-    $('.show_pizza_lijst').click(function() {
-        element = $(this).next().slideDown('fast');
-    });
-
-    $('.topping').click(function() {
-        element = this;
-        $element = $(this);
-        name = $element.attr('name');
-        value = $element.val();
-        id = name.split('_').pop();
-        $div = $element.closest('div');
-        divId = $div.attr('id').split('_').pop();
-
-        $arrAllElements = $div.find('input:checkbox');
-        $arrUncheckedElements = $div.find('input:checkbox:not(:checked)');
-        $arrCheckedElements = $div.find('input:checkbox:checked');
-
-        if ($arrUncheckedElements.length < 2) {
-            $arrAllElements.removeAttr('disabled');
-            if ($element.is(':checked')) {
-                //alert('aan');
-                $('#form_' + divId + '_topping_' + id).remove();
-            } else {
-                $('#form_' + divId).append('<input type="hidden" id="form_' + divId + '_topping_' + id + '" name="excludeTopping[' + id + ']" value="' + name + '" />');
-                //alert('uit');
-            }
-        } else {
-            $arrCheckedElements.attr("disabled", true);
-        }
-    });
-
-    //do some magic to enable checkbox selection
-
-    var options, a;
-    pathArray = window.location.href.split('/');
-    protocol = pathArray[0];
-    host = pathArray[2];
-    url = protocol + '://' + host;
-
-    var options = null;
-
-    var $as = $('input[name="topping"]');
-    options = {
-        serviceUrl: '/items/topping-by-filter',
-        minChars: 1,
-        onSelect: newToppingSelected,
-    };
-    $as.autocomplete(options);
+    //$('.pizzalijst').hide();
+    //$('.show_pizza_lijst').click(function() {
+    //    element = $(this).next().slideDown('fast');
+    //});
+    //
+    //$('.topping').click(function() {
+    //    element = this;
+    //    $element = $(this);
+    //    name = $element.attr('name');
+    //    value = $element.val();
+    //    id = name.split('_').pop();
+    //    $div = $element.closest('div');
+    //    divId = $div.attr('id').split('_').pop();
+    //
+    //    $arrAllElements = $div.find('input:checkbox');
+    //    $arrUncheckedElements = $div.find('input:checkbox:not(:checked)');
+    //    $arrCheckedElements = $div.find('input:checkbox:checked');
+    //
+    //    if ($arrUncheckedElements.length < 2) {
+    //        $arrAllElements.removeAttr('disabled');
+    //        if ($element.is(':checked')) {
+    //            //alert('aan');
+    //            $('#form_' + divId + '_topping_' + id).remove();
+    //        } else {
+    //            $('#form_' + divId).append('<input type="hidden" id="form_' + divId + '_topping_' + id + '" name="excludeTopping[' + id + ']" value="' + name + '" />');
+    //            //alert('uit');
+    //        }
+    //    } else {
+    //        $arrCheckedElements.attr("disabled", true);
+    //    }
+    //});
+    //
+    ////do some magic to enable checkbox selection
+    //
+    //var options, a;
+    //pathArray = window.location.href.split('/');
+    //protocol = pathArray[0];
+    //host = pathArray[2];
+    //url = protocol + '://' + host;
+    //
+    //var options = null;
+    //
+    //var $as = $('input[name="topping"]');
+    //options = {
+    //    serviceUrl: '/items/topping-by-filter',
+    //    minChars: 1,
+    //    onSelect: newToppingSelected,
+    //};
+    //$as.autocomplete(options);
 
 });
 
