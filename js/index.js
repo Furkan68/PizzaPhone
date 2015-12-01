@@ -25,7 +25,7 @@ jQuery(document).ready(function () {
         }
     });
 
-    $('#toggle-bestelbon').click(function(){
+    $('#toggle-bestelbon').click(function () {
         $('#box-2').toggle();
     });
 
