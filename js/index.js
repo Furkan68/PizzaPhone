@@ -20,10 +20,10 @@ jQuery(document).ready(function () {
         if (a == c) {
             b.toggle();
             $( this ).toggleClass(function() {
-                if ( $( this ).is( ".fa-plus" ) ) {
-                    return "fa-minus";
+                if ( $( this ).is( ".fa-arrow-down" ) ) {
+                    return "fa-arrow-up";
                 } else {
-                    return "fa-plus";
+                    return "fa-arrow-down";
                 }
             });
             //$( this ).toggleClass( "fa-minus" );
