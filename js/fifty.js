@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
 	$linkerfoto = $('#links5050');
 	$rechterfoto = $('#rechts5050');
 	$inputItems = $('.changefoto');
-	
+
 	$inputItems.click(function(){
 		$img = $(this);
 		kant = $img.attr('name');
@@ -17,5 +17,5 @@ jQuery(document).ready(function() {
 			$rechterfoto.attr('src', server + '/fotos/fifty-fifty/rechts/' + pizzaNaam);
 		}
 	});
-	
+
 })

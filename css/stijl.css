@@ -1033,7 +1033,7 @@ table, img {
     background: none;
 }
 
-#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title a {
+#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title {
     display: block;
     padding: 8px 10px;
     border-top-left-radius: 6px;
@@ -1043,12 +1043,12 @@ table, img {
     background: #FFFFFF;
 }
 
-#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title a.collapsed {
+#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title{
     border-radius: 6px;
     background: #C7E68A;
 }
 
-#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title a.collapsed:hover {
+#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title:hover {
     background: #DEF2B5;
 }
 
@@ -2461,4 +2461,8 @@ form > div:nth-child(1) > ul > li > label input[type='radio'] {
 
 .ingredients table tr td input {
     float: left;
+}
+
+.panel-hover-show{
+    display: none;
 }
