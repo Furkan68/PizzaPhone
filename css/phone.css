@@ -407,6 +407,12 @@ Note: look for js/index.js for phone settings with js
     }
 }
 
+@media only screen and (min-width: 810px) and (max-width: 920px) {
+    #mainbody .dm-block .pizzas .product {
+        width: 32%;
+    }
+}
+
 @media only screen and (min-width: 555px) and (max-width: 810px) {
     #mainbody .dm-block .pizzas .product {
         width: 49%;
