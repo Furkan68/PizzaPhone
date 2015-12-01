@@ -33,7 +33,7 @@ jQuery(document).ready(function () {
         //}
     });
 
-    if ( $(window).width() > 739) {
+    if ( $(window).width() > 920) {
         // javascript for large screens
         $('.panel-hover').hover(function() {
             var el = $(this);
