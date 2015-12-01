@@ -19,15 +19,18 @@ jQuery(document).ready(function () {
         var c = b.attr('pizza-no');
         if (a == c) {
             b.toggle();
-            $( this ).toggleClass(function() {
-                if ( $( this ).is( ".fa-arrow-down" ) ) {
-                    return "fa-arrow-up";
-                } else {
-                    return "fa-arrow-down";
-                }
-            });
-            //$( this ).toggleClass( "fa-minus" );
+            $( this ).toggleClass('fa-arrow-down fa-arrow-up');
         }
+
+        //function() {
+        //    if ( $( this ).is( ".fa-arrow-down" ) ) {
+        //        console.log('true up');
+        //        return "fa-arrow-up";
+        //    } else {
+        //        console.log('true down');
+        //        return "fa-arrow-down";
+        //    }
+        //}
     });
 
 
