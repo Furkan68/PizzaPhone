@@ -11,6 +11,8 @@ jQuery(document).ready(function () {
         }
     });
 
+    $('#button-amount').html($('#total-price').html());
+
     $('.product-edit').click(function () {
         var el = $(this);
         var a = el.attr('pizza-no');
@@ -19,54 +21,55 @@ jQuery(document).ready(function () {
         var c = b.attr('pizza-no');
         if (a == c) {
             b.toggle();
-            $( this ).toggleClass('fa-arrow-down fa-arrow-up');
+            $(this).toggleClass('fa-arrow-down fa-arrow-up');
         }
-
-        //function() {
-        //    if ( $( this ).is( ".fa-arrow-down" ) ) {
-        //        console.log('true up');
-        //        return "fa-arrow-up";
-        //    } else {
-        //        console.log('true down');
-        //        return "fa-arrow-down";
-        //    }
-        //}
     });
 
-    if ( $(window).width() > 920) {
-        // javascript for large screens
-        $('.panel-hover').hover(function() {
+    $('#toggle-bestelbon').click(function(){
+        $('#box-2').slideToggle("fast");
+    });
+
+    $(window).resize(function () {
+        if (Modernizr.mq('(max-width: 920px)')) {
+            $('#box-2').remove().insertAfter($('#bestelbon-line'));
+            $('#box-2').hide();
+        } else {
+            $("#box-2").remove().insertAfter($("#insert-after-div"));
+            $('#box-2').show();
+        }
+    });
+
+    if (Modernizr.mq('(max-width: 920px)')) {
+        //javascript for small screens
+        $('.panel-hover').click(function () {
             var el = $(this);
             var num1 = el.attr('panel-id');
-            console.log('panel-id ;'+num1);
+            console.log('panel-id ;' + num1);
             //var parent = el.parent().closest('.panel-default');
             var el2 = el.find('.panel-hover-show');
             var num3 = el2.attr('panel-id');
-            console.log('panel-hid ;'+num3);
-            if(num3 == num1){
+            console.log('panel-hid ;' + num3);
+            if (num3 == num1) {
                 el2.toggle();
             }
         });
+        $('#box-2').remove().insertAfter($('#bestelbon-line'));
+        $('#box-2').hide();
     } else {
-        //javascript for small screens
-        $('.panel-hover').click(function() {
+        // javascript for large screens
+        $('.panel-hover').hover(function () {
             var el = $(this);
             var num1 = el.attr('panel-id');
-            console.log('panel-id ;'+num1);
+            console.log('panel-id ;' + num1);
             //var parent = el.parent().closest('.panel-default');
             var el2 = el.find('.panel-hover-show');
             var num3 = el2.attr('panel-id');
-            console.log('panel-hid ;'+num3);
-            if(num3 == num1){
+            console.log('panel-hid ;' + num3);
+            if (num3 == num1) {
                 el2.toggle();
             }
         });
     }
-
-
-   
-
-
 
     $('.gestreept tr').addClass('lijn_wit');
     $('.gestreept tr:odd').removeClass('lijn_wit').addClass('lijn_grijs');

@@ -20,9 +20,9 @@ Note: look for js/index.js for phone settings with js
 
 /*side1 hide in small devise*/
 /*@media only screen and (max-width: 750px) {*/
-    /*#side1 .box1 {*/
-        /*display: none;*/
-    /*}*/
+/*#side1 .box1 {*/
+/*display: none;*/
+/*}*/
 /*}*/
 
 /*/!*side2 box1 and box2 both hide in small devise*!/*/
@@ -422,6 +422,52 @@ Note: look for js/index.js for phone settings with js
 @media only screen and (max-width: 554px) {
     #mainbody .dm-block .pizzas .product {
         width: 98%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    #box-2{
+        margin: 0;
+        border-top: none;
+        border-bottom: 38px solid;
+        z-index: 1000;
+    }
+
+    .navbar{
+        margin-bottom: 0 !important;
+    }
+
+    #bestelbon-line{
+        text-align: center;
+        height: 46px;
+        width: 100%;
+        padding: 5px 10px 5px 10px;
+        margin-bottom: 15px;
+        border-top: 1px solid #822020;
+        background-color: #CC2929;
+        display: block;
+    }
+
+    #toggle-bestelbon{
+        position: relative;
+    }
+
+    .bestelbon-item,
+    #total-price-text
+    {
+        color: #0f0f0f;
+    }
+
+    #total-price-text{
+        padding: 10px 15px 10px 15px;
+    }
+
+    #bestelbon{
+        margin-top: -15px;
+    }
+
+    .bestelbon-knoppen {
+        margin: -5px -15px -38px
     }
 }
 

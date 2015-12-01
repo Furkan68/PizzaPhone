@@ -264,7 +264,7 @@ table, img {
 /* ------------------------------ ***** HEADER-SURROUND ***** ------------------------------ */
 
 #header-surround {
-    margin-bottom: -10px;
+
 }
 
 /* ------------------------------ ***** HEADER ***** ------------------------------ */
@@ -340,7 +340,7 @@ table, img {
     background-color: #8EBD31;
 }
 
-.btn-success {
+.btn-success, .btn-success:focus {
     background-color: #8EBD31;
     border-color: #8EBD31;
     margin: 0 3px 0 0;
@@ -513,10 +513,10 @@ table, img {
         font-size: 16px;
     }
 
-    #mainmenu .navbar-nav li{
+    #mainmenu .navbar-nav li {
         border-left: none;
 
-        border-bottom: 1px solid  #CC2929;
+        border-bottom: 1px solid #CC2929;
     }
 }
 
@@ -539,7 +539,6 @@ table, img {
     background-color: #8EBD31;
     color: #FFFFFF;
 }
-
 
 /*!* USERMENU *!*/
 
@@ -656,6 +655,7 @@ table, img {
 /* ------------------------------ ***** SHOWCASE ***** ------------------------------ */
 
 #showcase {
+    margin: -20px 0 10px 0;
 }
 
 #showcase .dm-container {
@@ -802,8 +802,6 @@ table, img {
     border-bottom: 2px solid #8EBD31;
 }
 
-
-
 #mainbody .dm-block ul.nav.nav-tabs > li {
     float: none;
     display: inline-block;
@@ -831,7 +829,6 @@ table, img {
     border: 2px solid #8EBD31;
     border-bottom-color: transparent;
 }
-
 
 @media screen and (max-width: 920px) {
     #mainbody .dm-block ul.nav.nav-tabs > li:last-child > a {
@@ -1043,7 +1040,7 @@ table, img {
     background: #FFFFFF;
 }
 
-#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title{
+#mainbody .dm-block .configurator .panel-group .panel .panel-heading .panel-title {
     border-radius: 6px;
     background: #C7E68A;
 }
@@ -1418,33 +1415,31 @@ p.vanaf {
 }
 
 #bestelbon {
+
+}
+
+#bestelbon-line {
+    display: none;
+}
+
+#bestelbon #bestelbon-inner #image-space {
+    background: url(../images/template_images/bon.png) repeat-x;
+    height: 50px;
+    width: 100%;
 }
 
 #bestelbon #bestelbon-inner {
     margin: 0 -15px 5px;
-    padding-top: 50px;
-    box-shadow: 0 2px 3px;
-    background: url(../images/template_images/bon1.png) no-repeat;
 }
 
-#bestelbon {
-}
-
-#bestelbon #bestelbon-inner {
-    margin: 0 -15px 5px;
-    padding-top: 50px;
-    box-shadow: 0 2px 3px;
-    background: url(../images/template_images/bon.png) no-repeat;
-}
-
-@media only screen and (min-width: 400px) {
-    #bestelbon #bestelbon-inner {
-        background: url(../images/template_images/bon.png) repeat;
-    }
-}
+/*@media only screen and (min-width: 400px) {*/
+/*#bestelbon #bestelbon-inner #image-space{*/
+/*background: url(../images/template_images/bon.png) repeat-x;*/
+/*}*/
+/*}*/
 
 #bestelbon #bestelbon-inner p.bestelbon-item {
-    margin: 0;
+    margin: -3px 0;
     padding: 2px 15px;
     background: #FFFFFF;
 }
@@ -2463,6 +2458,6 @@ form > div:nth-child(1) > ul > li > label input[type='radio'] {
     float: left;
 }
 
-.panel-hover-show{
+.panel-hover-show {
     display: none;
 }
