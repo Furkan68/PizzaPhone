@@ -407,6 +407,18 @@ Note: look for js/index.js for phone settings with js
     }
 }
 
+@media only screen and (min-width: 555px) and (max-width: 810px) {
+    #mainbody .dm-block .pizzas .product {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 554px) {
+    #mainbody .dm-block .pizzas .product {
+        width: 98%;
+    }
+}
+
 /* to remove the tab of pizza size*/
 
 /*@media only screen and (max-width: 750px) {*/

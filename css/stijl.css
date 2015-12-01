@@ -833,7 +833,7 @@ table, img {
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
     #mainbody .dm-block ul.nav.nav-tabs > li:last-child > a {
         -webkit-border-radius: 0 0 4px 4px;
         -moz-border-radius: 0 0 4px 4px;
