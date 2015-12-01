@@ -371,8 +371,8 @@ table, img {
     padding: 8px 5px 0 0 !important;
 }
 
-@media screen and (max-width: 920px) {
-    #mainmenu .navbar-right li button{
+@media screen and (max-width: 768px) {
+    #mainmenu .navbar-right li button {
         margin: 0 5% 5px 5%;
         width: 90%;
         font-size: 16px;
@@ -787,6 +787,8 @@ table, img {
     border-bottom: 2px solid #8EBD31;
 }
 
+
+
 #mainbody .dm-block ul.nav.nav-tabs > li {
     float: none;
     display: inline-block;
@@ -795,9 +797,6 @@ table, img {
 }
 
 #mainbody .dm-block ul.nav.nav-tabs > li > a {
-    -webkit-border-radius: 8px 8px 0 0;
-    -moz-border-radius: 8px 8px 0 0;
-    border-radius: 8px 8px 0 0;
     color: #736367;
     background: #C7E68A;
     border: 2px solid #8EBD31;
@@ -816,6 +815,25 @@ table, img {
     background-color: #FFFFFF;
     border: 2px solid #8EBD31;
     border-bottom-color: transparent;
+}
+
+
+@media screen and (max-width: 768px) {
+    #mainbody .dm-block ul.nav.nav-tabs > li:last-child > a {
+        -webkit-border-radius: 0 0 4px 4px;
+        -moz-border-radius: 0 0 4px 4px;
+        border-radius: 0 0 4px 4px;
+    }
+
+    #mainbody .dm-block ul.nav.nav-tabs {
+        border-bottom: none;
+    }
+
+    #mainbody .dm-block ul.nav.nav-tabs > li.active > a,
+    #mainbody .dm-block ul.nav.nav-tabs > li.active > a:hover,
+    #mainbody .dm-block ul.nav.nav-tabs > li.active > a:focus {
+        border-bottom: 2px solid #8EBD31;
+    }
 }
 
 /* PRODUCT IMAGE */
