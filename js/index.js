@@ -33,19 +33,38 @@ jQuery(document).ready(function () {
         //}
     });
 
+    if ( $(window).width() > 739) {
+        // javascript for large screens
+        $('.panel-hover').hover(function() {
+            var el = $(this);
+            var num1 = el.attr('panel-id');
+            console.log('panel-id ;'+num1);
+            //var parent = el.parent().closest('.panel-default');
+            var el2 = el.find('.panel-hover-show');
+            var num3 = el2.attr('panel-id');
+            console.log('panel-hid ;'+num3);
+            if(num3 == num1){
+                el2.toggle();
+            }
+        });
+    } else {
+        //javascript for small screens
+        $('.panel-hover').click(function() {
+            var el = $(this);
+            var num1 = el.attr('panel-id');
+            console.log('panel-id ;'+num1);
+            //var parent = el.parent().closest('.panel-default');
+            var el2 = el.find('.panel-hover-show');
+            var num3 = el2.attr('panel-id');
+            console.log('panel-hid ;'+num3);
+            if(num3 == num1){
+                el2.toggle();
+            }
+        });
+    }
 
-    $('.panel-hover').hover(function() {
-        var el = $(this);
-        var num1 = el.attr('panel-id');
-        console.log('panel-id ;'+num1);
-        //var parent = el.parent().closest('.panel-default');
-        var el2 = el.find('.panel-hover-show');
-        var num3 = el2.attr('panel-id');
-        console.log('panel-hid ;'+num3);
-        if(num3 == num1){
-            el2.toggle();
-        }
-    });
+
+   
 
 
 
