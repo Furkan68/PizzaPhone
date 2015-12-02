@@ -2461,3 +2461,6 @@ form > div:nth-child(1) > ul > li > label input[type='radio'] {
 .panel-hover-show {
     display: none;
 }
+#fifty-knop{
+    margin-top: 10px;
+}
