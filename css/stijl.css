@@ -1284,11 +1284,11 @@ table, img {
 }
 
 .product-details .product-description .fa {
-    color: #76dd76;
+    color: #CC2929;
 }
 
 .product-details .product-description .fa:hover {
-    color: #CC2929;
+    color: #76dd76;
 }
 
 p.vanaf {
