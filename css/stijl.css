@@ -1446,13 +1446,22 @@ p.vanaf {
 
 #bestelbon .bon-aantal {
     float: left;
-    width: 8px;
-    margin-right: 4px;
+    width: 30px;
+    margin-right: 2px;
+
+}
+
+#bestelbon .bon-aantal .fa {
+    color: #CC2929;
+}
+
+#bestelbon .bon-aantal .fa:hover {
+    color: #76dd76;
 }
 
 #bestelbon .bon-naam {
     display: inline-block;
-    width: 100px;
+    width: 80px;
 }
 
 #bestelbon .bon-prijs {
