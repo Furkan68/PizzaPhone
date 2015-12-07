@@ -64,22 +64,6 @@ Note: look for js/index.js for phone settings with js
         width: 100%;
     }
 
-    .dm-container {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    /* menu by header */
-    #mainmenu .dm-container .menu-block {
-        width: 100%;
-        margin: 0;
-        padding: 0 2px;
-    }
-
-    #mainmenu .dm-container .menu-block .dm-menu li {
-        /*width: 100px;*/
-    }
-
     /*new/////////////////////////////////////////////////////*/
     /*.dm-container .usermenu-block .dm-menu li.item a {*/
     /*margin: 7px 5px;*/
@@ -147,7 +131,7 @@ Note: look for js/index.js for phone settings with js
 
     #footer .dm-container .dm-block #dm-logo {
         width: 150px;
-        height: 121.5px;
+        /*height: 121px;*/
         height: 50px;
         display: inline-block;
         background-size: cover;
@@ -160,8 +144,8 @@ Note: look for js/index.js for phone settings with js
     .footer-contact-surround {
         display: inline-block;
         vertical-align: top;
-        height: 121.5px;
-        padding: 40px 0px;
+        height: 121px;
+        padding: 40px 0;
     }
 
     .facebook, .twitter {
@@ -191,54 +175,43 @@ Note: look for js/index.js for phone settings with js
 /* it was max 920 i change it to 400px to keep 2 beside each other */
 @media only screen and (max-width: 400px) {
     #header {
-        height: 300px;
+        display: none;
+        /*height: 300px;*/
     }
 
-    #header:after {
-        height: 200px;
-    }
-
-    #header .dm-container .dm-block.logo-block {
-        float: none !important;
-        width: 100%;
-
-    }
-
-    #header .dm-container .dm-block.logo-block #dm-logo {
-        width: 100%;
-        background: url(../images/template_images/logo.png) 50% 0 no-repeat;
-    }
-
-    #header .dm-container .dm-block {
-        float: left;
-        display: block;
-        margin: 200px 2px 0 2px;
-        text-align: center;
-        position: absolute;
-    }
-
-    .dm-container {
-        width: 100%;
-    }
-
-    #mainmenu .dm-container .menu-block {
-        margin-bottom: 25px;
-        /*margin: 6px;*/
-        padding: 0 2px;
-
-    }
-
+    /*#header:after {*/
+    /*height: 200px;*/
+    /*}*/
+    /*#header .dm-container .dm-block.logo-block {*/
+    /*float: none !important;*/
+    /*width: 100%;*/
+    /*}*/
+    /*#header .dm-container .dm-block.logo-block #dm-logo {*/
+    /*width: 100%;*/
+    /*background: url(../images/template_images/logo.png) 50% 0 no-repeat;*/
+    /*}*/
+    /*#header .dm-container .dm-block {*/
+    /*float: left;*/
+    /*display: block;*/
+    /*margin: 200px 2px 0 2px;*/
+    /*text-align: center;*/
+    /*position: absolute;*/
+    /*}*/
+    /*.dm-container {*/
+    /*width: 100%;*/
+    /*}*/
+    /*#mainmenu .dm-container .menu-block {*/
+    /*margin-bottom: 25px;*/
+    /*!*margin: 6px;*!*/
+    /*padding: 0 2px;*/
+    /*}*/
     /*#mainmenu . dm-container .usermenu-block{*/
     /*background-color: blue;*/
     /*}*/
-    #showcase {
-        display: none;
-    }
-
     #side1, #side2 {
         width: 100%;
         margin-bottom: 10px;
-        margin-top: 40px;
+        margin-top: 10px;
     }
 
     #side2 {
@@ -259,8 +232,7 @@ Note: look for js/index.js for phone settings with js
 
     #mainbody {
         width: 100%;
-        /*margin: 0 0;*/
-        margin-top: 10px;
+        margin: 0 !important;
     }
 
     #mainbody .dm-block .pizzas .product {
@@ -350,49 +322,49 @@ Note: look for js/index.js for phone settings with js
 /*  d - other sizes */
 
 /*banner mobile until width 481 */
-@media only screen and (min-width: 481px) and (max-width: 970px) {
-    #showcase .dm-container .dm-block {
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-}
+/*@media only screen and (min-width: 481px) and (max-width: 970px) {*/
+/*#showcase .dm-container .dm-block {*/
+/*background-size: cover;*/
+/*background-repeat: no-repeat;*/
+/*}*/
+/*}*/
 
-@media only screen and (min-width: 481px) and (max-width: 524px) {
-    #showcase .dm-container .dm-block {
-        display: none;
-        /*height:128px;*/
-    }
-}
+/*@media only screen and (min-width: 481px) and (max-width: 524px) {*/
+/*#showcase .dm-container .dm-block {*/
+/*display: none;*/
+/*!*height:128px;*!*/
+/*}*/
+/*}*/
 
-@media only screen and (min-width: 481px) and (max-width: 630px) {
-    #showcase .dm-container .dm-block {
-        height: 148px;
-    }
-}
+/*@media only screen and (min-width: 481px) and (max-width: 630px) {*/
+/*#showcase .dm-container .dm-block {*/
+/*height: 148px;*/
+/*}*/
+/*}*/
 
-@media only screen and (min-width: 631px) and (max-width: 725px) {
-    #showcase .dm-container .dm-block {
-        height: 178px;
-    }
-}
+/*@media only screen and (min-width: 525px) and (max-width: 725px) {*/
+/*#showcase .dm-container .dm-block {*/
+/*height: 178px;*/
+/*}*/
+/*}*/
 
-@media only screen and (min-width: 726px) and (max-width: 744px) {
-    #showcase .dm-container .dm-block {
-        height: 184px;
-    }
-}
+/*@media only screen and (min-width: 726px) and (max-width: 744px) {*/
+/*#showcase .dm-container .dm-block {*/
+/*height: 184px;*/
+/*}*/
+/*}*/
 
-@media only screen and (min-width: 745px) and (max-width: 874px) {
-    #showcase .dm-container .dm-block {
-        height: 208px;
-    }
-}
+/*@media only screen and (min-width: 745px) and (max-width: 874px) {*/
+/*#showcase .dm-container .dm-block {*/
+/*height: 208px;*/
+/*}*/
+/*}*/
 
-@media only screen and (min-width: 875px) and (max-width: 970px) {
-    #showcase .dm-container .dm-block {
-        height: 268px;
-    }
-}
+/*@media only screen and (min-width: 875px) and (max-width: 970px) {*/
+/*#showcase .dm-container .dm-block {*/
+/*height: 268px;*/
+/*}*/
+/*}*/
 
 /*pizzablocks margin between blocks */
 @media only screen and (min-width: 613px) and (max-width: 774px) {
@@ -423,9 +395,70 @@ Note: look for js/index.js for phone settings with js
     #mainbody .dm-block .pizzas .product {
         width: 98%;
     }
+
+    .modal {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    form .form-block {
+        display: block;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+    }
+
+    form .form-block .formControlLabel {
+        float: left;
+        width: 200px;
+        padding-top: 8px;
+        text-align: left;
+    }
+
+    form .form-block .formControlLabel label {
+        margin: 0;
+        font-weight: normal;
+    }
+
+    form .form-block .formControls {
+        margin-left: 0;
+    }
+
+    form .form-block .formControls textarea,
+    form .form-block .formControls input[type="text"],
+    form .form-block .formControls input[type="password"] {
+        display: block;
+        width: 60%;
+        height: 30px;
+        padding: 4px;
+        margin-bottom: 2px;
+        font-size: 13px;
+        line-height: 18px;
+        background-color: #ffffff;
+        border: 1px solid #D9CCCF;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+        -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+        transition: border linear 0.2s, box-shadow linear 0.2s;
+    }
+
+    .modal-footer .knop {
+        float: left;
+        line-height: 22px;
+    }
 }
 
 @media only screen and (max-width: 920px) {
+    #showcase {
+        display: none;
+    }
+
     #box-2 {
         margin: 0;
         border-top: none;
@@ -435,6 +468,22 @@ Note: look for js/index.js for phone settings with js
 
     .navbar {
         margin-bottom: 0 !important;
+    }
+
+    .dm-container {
+        width: 100%;
+        /*margin: 0 auto;*/
+    }
+
+    /* menu by header */
+    #mainmenu .dm-container .menu-block {
+        width: 100%;
+        /*margin: 0;*/
+        padding: 0 2px;
+    }
+
+    #mainmenu .dm-container .menu-block .dm-menu li {
+        /*width: 100px;*/
     }
 
     #bestelbon-line {
