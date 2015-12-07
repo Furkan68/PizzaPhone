@@ -73,6 +73,7 @@ Note: look for js/index.js for phone settings with js
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
+        display: none;
     }
 
     .box1 .title,
