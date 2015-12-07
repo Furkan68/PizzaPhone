@@ -2467,3 +2467,7 @@ form > div:nth-child(1) > ul > li > label input[type='radio'] {
 #fifty-knop{
     margin-top: 10px;
 }
+.footer-menue{
+    font-weight: bold;
+    list-style: none;
+}
