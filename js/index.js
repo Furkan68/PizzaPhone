@@ -43,12 +43,12 @@ jQuery(document).ready(function () {
         //javascript for small screens
         $('.panel-hover').click(function () {
             var el = $(this);
-            var num1 = el.attr('panel-id');
-            console.log('panel-id ;' + num1);
+            var num1 = el.attr('panel-id') ;
+            //console.log('panel-id ;' + num1);
             //var parent = el.parent().closest('.panel-default');
             var el2 = el.find('.panel-hover-show');
             var num3 = el2.attr('panel-id');
-            console.log('panel-hid ;' + num3);
+            //console.log('panel-hid ;' + num3);
             if (num3 == num1) {
                 el2.toggle();
             }
