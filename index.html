@@ -138,129 +138,6 @@
             </nav>
 
 
-            <!-- Modal -->
-            <div class="modal fade" id="inloggenModal" tabindex="-1" aria-hidden="true" style="display: none;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form id="login-form" action="/customer/lookup" method="post">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">×</span></button>
-                                <h2 class="modal-title">Inloggen</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>Gelieve je emailadres en wachtwoord in te vullen.</p>
-
-
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="email" class="required">E-mail</label>
-                                    </div>
-                                    <div class="formControls"><input type="text" required="" name="email" id="email"
-                                                                     aria-invalid="true" class="user-error">
-                                    </div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="wachtwoord"
-                                                                         class="required">Wachtwoord</label>
-                                    </div>
-                                    <div class="formControls"><input type="password" name="wachtwoord"
-                                                                     id="wachtwoord" required=""></div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button id="btn-inloggen" type="submit" class="knop">Inloggen</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="registrerenModal" tabindex="-1" aria-hidden="true" style="display: none;">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <form id="registratie-form" method="post" action="/customer/add-process">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">×</span></button>
-                                <h2 class="modal-title">Registreren</h2>
-                            </div>
-                            <div class="modal-body">
-                                <p>Gelieve je klanteninformatie aan te vullen, alle velden behalve wachtwoord zijn
-                                    verplicht.</p>
-
-                                <p>Alle naam-velden moeten minstens 2 karakters bevatten en mogen alleen de
-                                    karakters
-                                    a-z bevatten (hoofd- of kleine letters), en cijfers waar nodig.</p>
-
-
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="voornaam"
-                                                                         class="required">Voornaam</label></div>
-                                    <div class="formControls"><input type="text" required="" name="voornaam"
-                                                                     id="voornaam" value=""></div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="naam" class="required">Naam</label>
-                                    </div>
-                                    <div class="formControls"><input type="text" required="" name="naam" id="naam"
-                                                                     value="">
-                                    </div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="postcode"
-                                                                         class="required">Postcode</label></div>
-                                    <div class="formControls"><input type="text" required="" name="postcode"
-                                                                     id="postcode" value=""></div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="gemeente"
-                                                                         class="required">Gemeente</label></div>
-                                    <div class="formControls"><input type="text" required="" name="gemeente"
-                                                                     id="gemeente" value=""></div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="nummer"
-                                                                         class="required">Nummer</label></div>
-                                    <div class="formControls"><input type="text" name="nummer" id="nummer" value="">
-                                    </div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="telefoon"
-                                                                         class="required">Telefoon</label></div>
-                                    <div class="formControls"><input type="text" required="" name="telefoon"
-                                                                     id="telefoon" value=""></div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="email" class="required">E-mail</label>
-                                    </div>
-                                    <div class="formControls"><input type="text" required="" name="email" id="email"
-                                                                     value="">
-                                    </div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="wachtwoord" required=""
-                                                                         class="required">Wachtwoord</label>
-                                    </div>
-                                    <div class="formControls"><input type="text" name="wachtwoord" id="wachtwoord"
-                                                                     value=""></div>
-                                </div>
-                                <div class="form-block">
-                                    <div class="formControlLabel"><label for="bevestigwachtwoord" required=""
-                                                                         class="required">Bevestig
-                                        Wachtwoord</label></div>
-                                    <div class="formControls"><input type="text" name="bevestigwachtwoord"
-                                                                     id="bevestigwachtwoord" value=""></div>
-                                </div>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button id="btn-registratie" type="submit" class="knop">Account aanmaken</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
         </div>
         <div id="bestelbon-line">
             <button class="btn btn-success" id="toggle-bestelbon">TOTAAL: € <span id="button-amount"></span></button>
@@ -1981,9 +1858,9 @@
                       method="post">
                     <dl class="zend_form">
                         <!--<div>-->
-                            <!--&lt;!&ndash;<dt id="naam-label"><label for="naam" class="required">Naam</label></br></dt>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<dd id="naam-element"><input type="text" name="naam" placeholder="Naam" id="naam" value=""/>&ndash;&gt;-->
-                            <!--</dd>-->
+                        <!--&lt;!&ndash;<dt id="naam-label"><label for="naam" class="required">Naam</label></br></dt>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<dd id="naam-element"><input type="text" name="naam" placeholder="Naam" id="naam" value=""/>&ndash;&gt;-->
+                        <!--</dd>-->
                         <!--</div>-->
                         <div>
                             <!--<dt id="email-label"><label for="email" class="required">E-mail</label></br></dt>-->
@@ -2125,5 +2002,130 @@
     //    })
     //    ;
 </script>
+
+<!-- Modal -->
+<div class="modal fade" id="inloggenModal" tabindex="-1" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="login-form" action="/customer/lookup" method="post">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                    <h2 class="modal-title">Inloggen</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Gelieve je emailadres en wachtwoord in te vullen.</p>
+
+
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="email" class="required">E-mail</label>
+                        </div>
+                        <div class="formControls"><input type="text" required="" name="email" id="email"
+                                                         aria-invalid="true" class="user-error">
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="wachtwoord"
+                                                             class="required">Wachtwoord</label>
+                        </div>
+                        <div class="formControls"><input type="password" name="wachtwoord"
+                                                         id="wachtwoord" required=""></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="btn-inloggen" type="submit" class="knop">Inloggen</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="registrerenModal" tabindex="-1" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="registratie-form" method="post" action="/customer/add-process">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                    <h2 class="modal-title">Registreren</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Gelieve je klanteninformatie aan te vullen, alle velden behalve wachtwoord zijn
+                        verplicht.</p>
+
+                    <p>Alle naam-velden moeten minstens 2 karakters bevatten en mogen alleen de
+                        karakters
+                        a-z bevatten (hoofd- of kleine letters), en cijfers waar nodig.</p>
+
+
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="voornaam"
+                                                             class="required">Voornaam</label></div>
+                        <div class="formControls"><input type="text" required="" name="voornaam"
+                                                         id="voornaam" value=""></div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="naam" class="required">Naam</label>
+                        </div>
+                        <div class="formControls"><input type="text" required="" name="naam" id="naam"
+                                                         value="">
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="postcode"
+                                                             class="required">Postcode</label></div>
+                        <div class="formControls"><input type="text" required="" name="postcode"
+                                                         id="postcode" value=""></div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="gemeente"
+                                                             class="required">Gemeente</label></div>
+                        <div class="formControls"><input type="text" required="" name="gemeente"
+                                                         id="gemeente" value=""></div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="nummer"
+                                                             class="required">Nummer</label></div>
+                        <div class="formControls"><input type="text" name="nummer" id="nummer" value="">
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="telefoon"
+                                                             class="required">Telefoon</label></div>
+                        <div class="formControls"><input type="text" required="" name="telefoon"
+                                                         id="telefoon" value=""></div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="email" class="required">E-mail</label>
+                        </div>
+                        <div class="formControls"><input type="text" required="" name="email" id="email"
+                                                         value="">
+                        </div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="wachtwoord" required=""
+                                                             class="required">Wachtwoord</label>
+                        </div>
+                        <div class="formControls"><input type="text" name="wachtwoord" id="wachtwoord"
+                                                         value=""></div>
+                    </div>
+                    <div class="form-block">
+                        <div class="formControlLabel"><label for="bevestigwachtwoord" required=""
+                                                             class="required">Bevestig
+                            Wachtwoord</label></div>
+                        <div class="formControls"><input type="text" name="bevestigwachtwoord"
+                                                         id="bevestigwachtwoord" value=""></div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="btn-registratie" type="submit" class="knop">Account aanmaken</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
