@@ -68,9 +68,15 @@ jQuery(document).ready(function () {
             var el2 = el.find('.panel-hover-show');
             var num3 = el2.attr('panel-id');
             console.log('panel-hid ;' + num3);
+
             if (num3 == num1) {
                 el2.toggle();
             }
+        });
+
+        $('.panel-hover').mouseout(function(){
+            $('#pizzasopmaatPane .product-image').css('marginTop', '0');
+            $('#mainbody-surround .sidebar').css('marginTop', '0');
         });
     }
 

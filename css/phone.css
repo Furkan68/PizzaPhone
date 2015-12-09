@@ -323,7 +323,7 @@ Note: look for js/index.js for phone settings with js
 @media only screen and (max-width: 475px) {
     #mainbody .dm-block .configurator {
         position: relative;
-        width: 50%;
+        width: 51%;
     }
 }
 
@@ -577,6 +577,10 @@ Note: look for js/index.js for phone settings with js
         right: 12.5% !important;
         width: 75%;
         height: auto;
+    }
+
+    #bestelbon .bon-naam {
+        width: auto !important;
     }
 }
 
