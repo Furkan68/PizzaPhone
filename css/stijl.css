@@ -853,10 +853,10 @@ table, img {
     position: relative;
 }
 
+
 #mainbody .dm-block .tab-pane .product-image {
     position: relative;
     width: 50%;
-    border-left: 10px solid #fff;
 }
 
 #mainbody .dm-block .tab-pane .product-image img {
@@ -864,21 +864,37 @@ table, img {
     height: auto;
 }
 
+#mainbody .dm-block .tab-pane .product-image #basicpom {
+    height: 394px;
+    width: 290px;
+}
+
 #mainbody .dm-block .tab-pane .product-image #links5050 {
+    width: 138px;
+    height: 250px;
     position: absolute;
     max-width: 50%;
-    float: left;
+    float: right;
     top: 0;
-    left: 0;
+    right: 0;
+
 }
 
 #mainbody .dm-block .tab-pane .product-image #rechts5050 {
+    width: 138px;
+    height: 250px;
     position: absolute;
     max-width: 50%;
     float: right;
     top: 0;
     right: 0;
 }
+
+#mainbody .dm-block .tab-pane .product-image #center5050 {
+    width: 265px;
+    height: 250px;
+}
+
 
 #mainbody .dm-block #pizzasopmaatPane .product-image {
     position: absolute;

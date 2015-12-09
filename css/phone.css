@@ -320,6 +320,13 @@ Note: look for js/index.js for phone settings with js
     }
 }
 
+@media only screen and (max-width: 475px) {
+    #mainbody .dm-block .configurator {
+        position: relative;
+        width: 50%;
+    }
+}
+
 /*  d - other sizes */
 
 /*banner mobile until width 481 */
@@ -390,11 +397,26 @@ Note: look for js/index.js for phone settings with js
     #mainbody .dm-block .pizzas .product {
         width: 49%;
     }
+
+
 }
+
+@media only screen and (min-width: 643px) and (max-width: 810px) {
+    #mainbody .dm-block .pizzas .product .product-details .product-description {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
 
 @media only screen and (max-width: 554px) {
     #mainbody .dm-block .pizzas .product {
         width: 98%;
+    }
+
+    #mainbody .dm-block .pizzas .product .product-details .product-description {
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
 
     .modal {
@@ -454,6 +476,7 @@ Note: look for js/index.js for phone settings with js
         line-height: 22px;
     }
 }
+
 
 @media only screen and (max-width: 920px) {
     #showcase {
@@ -519,6 +542,41 @@ Note: look for js/index.js for phone settings with js
 
     .bestelbon-knoppen {
         margin: -5px -15px -38px
+    }
+
+    #mainbody .dm-block .tab-pane .responsimg {
+        width: 60% !important;
+        height: 100% !important;
+    }
+
+    .bestel-respons{
+        font-size: 12pt !important;
+    }
+
+    #mainbody .dm-block .tab-pane .responsimg #center5050 {
+        left: 12.5% !important;
+        right: 12.5% !important;
+        width: 75%;
+        height: auto;
+    }
+
+    #mainbody .dm-block .tab-pane .responsimg #links5050 {
+        width: 37.5%;
+        height: auto;
+        left: 12.5% !important;
+    }
+
+    #mainbody .dm-block .tab-pane .responsimg #rechts5050 {
+        width: 37.5%;
+        height: auto;
+        right: 12.5% !important;
+    }
+
+    #mainbody .dm-block .tab-pane .product-image #basicpom {
+        left: 12.5% !important;
+        right: 12.5% !important;
+        width: 75%;
+        height: auto;
     }
 }
 

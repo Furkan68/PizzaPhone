@@ -260,7 +260,7 @@
                                                     pizza-no="1"></i>
 
                                             <div class="ingredients" pizza-no="1">
-                                        <p>VOEG DE INGREDIËNTEN TOE</p>
+                                        <p>LAAT INGREDIËNTEN WEG</p>
                                         <table>
                                             <tbody>
                                             <tr>
@@ -377,7 +377,7 @@
                                                 pizza-no="2"></i>
 
                                         <div class="ingredients" pizza-no="2">
-                                    <p>VOEG DE INGREDIËNTEN TOE</p>
+                                    <p>LAAT INGREDIËNTEN WEG</p>
                                     <table>
                                         <tbody>
                                         <tr>
@@ -484,7 +484,7 @@
                                             pizza-no="3"></i>
 
                                     <div class="ingredients" pizza-no="3">
-                                <p>VOEG DE INGREDIËNTEN TOE</p>
+                                <p>LAAT INGREDIËNTEN WEG</p>
                                 <table>
                                     <tbody>
                                     <tr>
@@ -591,7 +591,7 @@
                                         pizza-no="4"></i>
 
                                 <div class="ingredients" pizza-no="4">
-                            <p>VOEG DE INGREDIËNTEN TOE</p>
+                            <p>LAAT INGREDIËNTEN WEG</p>
                             <table>
                                 <tbody>
                                 <tr>
@@ -698,7 +698,7 @@
                                     pizza-no="5"></i>
 
                             <div class="ingredients" pizza-no="5">
-                        <p>VOEG DE INGREDIËNTEN TOE</p>
+                        <p>LAAT INGREDIËNTEN WEG</p>
                         <table>
                             <tbody>
                             <tr>
@@ -805,7 +805,7 @@
                                 pizza-no="6"></i>
 
                         <div class="ingredients" pizza-no="6">
-                    <p>VOEG DE INGREDIËNTEN TOE</p>
+                    <p>LAAT INGREDIËNTEN WEG</p>
                     <table>
                         <tbody>
                         <tr>
@@ -912,7 +912,7 @@
                             pizza-no="7"></i>
 
                     <div class="ingredients" pizza-no="7">
-                <p>VOEG DE INGREDIËNTEN TOE</p>
+                <p>LAAT INGREDIËNTEN WEG</p>
                 <table>
                     <tbody>
                     <tr>
@@ -1014,10 +1014,9 @@
         <p class="fout"></p>
 
         <form method="post" action="http://www.pizzaphone.be/basket/add">
-            <div class="product-image">
+            <div class="product-image responsimg">
                 <div id="basic_pizza" align="center" style="z-index: 0;">
-                    <img src="images/pizzaOpMaat/basis.png" alt="pizza" width="290"
-                         height="394">
+                    <img src="images/pizzaOpMaat/basis.png" alt="pizza" id="basicpom">
                 </div>
                 <div id="toppingfotos" style="float: left;">
                     <div class="toppingfoto" id="toppingfoto-47" z-index="47"
@@ -1251,7 +1250,7 @@
                         <div id="collapse3" class="panel-hover-show" panel-id="3">
                             <div class="panel-body">
                                 <div class="form_elements">
-                                    <p><span>1x single</span><span>2x double</span></p>
+                                    <p><span>1x </span><span>2x</span></p>
                                     <ul class="garnering">
                                         <li><input type="checkbox" name="topping[]"
                                                    value="47" class="toggleImage">
@@ -1428,7 +1427,7 @@
                         <dt id="bestel-label">&nbsp;</dt>
                         <dd id="bestel-element"><input type="submit" name="bestel"
                                                        id="bestel" value="Bestel"
-                                                       class="knop"></dd>
+                                                       class="knop bestel-respons"></dd>
                     </div>
                     <div class="clear"></div>
                 </div>
@@ -1449,14 +1448,11 @@
         <p class="fout"></p>
 
         <form method="post" action="basket/add">
-            <div class="product-image" style="float: right">
+            <div class="product-image responsimg" style="float: right">
                 <div id="basic_pizza-ff" align="center" style="z-index: 0">
-                    <img src="fotos/pizzaOpMaat/basicPizza.jpg" alt="pizza" width="265"
-                         height="250">
-                    <img src="fotos/fifty-fifty/links/basic.jpg" id="links5050" width="138"
-                         height="260">
-                    <img src="fotos/fifty-fifty/rechts/basic.jpg" id="rechts5050"
-                         width="138" height="260">
+                    <img src="fotos/pizzaOpMaat/basicPizza.jpg" alt="pizza" id="center5050">
+                    <img src="fotos/fifty-fifty/links/basic.jpg" id="links5050">
+                    <img src="fotos/fifty-fifty/rechts/basic.jpg" id="rechts5050">
                 </div>
                 <div id="toppingfotos-ff" style="float: left">
 
@@ -1738,7 +1734,7 @@
                                                         id="type-ff"/></dd>
                         <dt id="bestel-label-ff"></dt>
                         <dd id="bestel-element-ff"><input type="submit" name="bestel"
-                                                          value="Bestel" class="knop"></dd>
+                                                          value="Bestel" class="knop bestel-respons"></dd>
                     </div>
                     <div class="clear"></div>
 
