@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 150%;
+    font-size: 175%;
 }
 
 h2 {
@@ -357,6 +357,8 @@ table, img {
     background-color: #CC2929;
 }
 
+
+
 #mainmenu .navbar-nav li.open .dropdown-menu li a {
     color: #F2AFAF;
     background-color: #CC2929;
@@ -378,6 +380,10 @@ table, img {
         width: 90%;
         font-size: 16px;
     }
+}
+
+#responslogo{
+    display: none;
 }
 
 /*#mainmenu .navbar-nav li a{*/
@@ -792,7 +798,7 @@ table, img {
     -moz-border-radius: 3px;
     border-radius: 38px;
     background: #FFFFFF;
-    border: 3px solid #8EBD31;
+    /* border: 3px solid #8EBD31; */
 }
 
 /* ----- BOOTSTRAP TABS ----- */
@@ -1084,9 +1090,29 @@ table, img {
     list-style-type: none;
 }
 
+legend {
+    padding: 5px 0 0 0 !important;
+    margin-bottom: 10px; !important;
+    font-size: 10px !important;
+}
+
+input[type=submit].bestel-respons{
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 10px;
+    background-color: #CC2929;
+}
+
+input[type=submit].bestel-respons:hover{
+    font-weight: bold;
+    font-size: 12pt;
+    padding: 10px;
+    background-color: #8EBD31;
+}
+
 #mainbody .dm-block .configurator .panel-group .panel .panel-body ul.garnering li input[type=radio],
 #mainbody .dm-block .configurator .panel-group .panel .panel-body ul.garnering li input[type=checkbox] {
-    margin: 1px 4px 0 0;
+    margin: 1px 10px 0 0;
 }
 
 #mainbody .dm-block .configurator .panel-group .panel .panel-body ul.garnering li span {
@@ -2319,7 +2345,7 @@ div#pomBodem {
 .knop {
     position: relative;
     margin: 0;
-    padding: 4px 10px;
+    padding: 4px;
     font-size: 9pt;
     text-transform: uppercase;
     color: #FFFFFF;

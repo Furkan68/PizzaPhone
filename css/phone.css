@@ -582,6 +582,54 @@ Note: look for js/index.js for phone settings with js
     #bestelbon .bon-naam {
         width: auto !important;
     }
+
+    .dm-block {
+        padding: 0 !important;
+        margin: 10px 10px 10px 15px;
+    }
+
+    #header .dm-container .dm-block.logo-block #dm-logo{
+        position: relative;
+        display: inline-block;
+        float: left;
+        /*margin-right: 20px;*/
+        top: 10px;
+        left: 5px;
+        width: 32px;
+        height: 32px;
+        background: url(../images/template_images/logo-mainmenu-fixed.png) 0 0 no-repeat;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+        -o-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in;
+    }
+
+    #responslogo:after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 32px;
+        bottom: 0;
+        left: 0;
+        background: url(../images/template_images/logo-mainmenu-fixed-2.png) 0 0 no-repeat;
+        -webkit-animation: tel ease-out 16s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-transform-origin: 50% 50%;
+        -moz-animation: tel ease-out 16s;
+        -moz-animation-iteration-count: infinite;
+        -moz-transform-origin: 50% 50%;
+        -o-animation: tel ease-out 16s;
+        -o-animation-iteration-count: infinite;
+        -o-transform-origin: 50% 50%;
+        -ms-animation: tel ease-out 16s;
+        -ms-animation-iteration-count: infinite;
+        -ms-transform-origin: 50% 50%;
+        animation: tel ease-out 16s;
+        animation-iteration-count: infinite;
+        transform-origin: 50% 50%;
+    }
 }
 
 /* to remove the tab of pizza size*/
