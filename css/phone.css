@@ -398,7 +398,6 @@ Note: look for js/index.js for phone settings with js
         width: 49%;
     }
 
-
 }
 
 @media only screen and (min-width: 643px) and (max-width: 810px) {
@@ -407,7 +406,6 @@ Note: look for js/index.js for phone settings with js
         margin-bottom: 15px;
     }
 }
-
 
 @media only screen and (max-width: 554px) {
     #mainbody .dm-block .pizzas .product {
@@ -477,10 +475,21 @@ Note: look for js/index.js for phone settings with js
     }
 }
 
-
 @media only screen and (max-width: 920px) {
     #showcase {
         display: none;
+    }
+
+    #footer .dm-container .dm-block:nth-of-type(2) {
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .footer-contact-surround {
+        display: inline-block;
+        vertical-align: top;
+        height: 50px !important;
+        padding: 0 !important;
     }
 
     #box-2 {
@@ -488,6 +497,38 @@ Note: look for js/index.js for phone settings with js
         border-top: none;
         border-bottom: 38px solid;
         z-index: 1000;
+    }
+
+    #dm-nb {
+        padding: 10px;
+        width: 48% !important;
+        float: right;
+    }
+
+    #dm-fili {
+        padding: 10px;
+        width: 48% !important;
+    }
+
+    #footer .dm-container #dm-sm #dm-logo-footer {
+        display: none;
+    }
+
+    #footer .dm-container #dm-sm .footer-contact-surround {
+        max-width: 100% !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
+
+    #footer .dm-container #dm-sm .footer-contact-surround p {
+        font-size: 12pt;
+        margin-left: 50px;
+        margin-top: 10px;
+        float: left;
+    }
+
+    #footer .dm-container #dm-sm .footer-contact-surround ul {
+        float: right;
     }
 
     .navbar {
@@ -549,7 +590,7 @@ Note: look for js/index.js for phone settings with js
         height: 100% !important;
     }
 
-    .bestel-respons{
+    .bestel-respons {
         font-size: 12pt !important;
     }
 
@@ -588,7 +629,7 @@ Note: look for js/index.js for phone settings with js
         margin: 10px 10px 10px 15px;
     }
 
-    #header .dm-container .dm-block.logo-block #dm-logo{
+    #header .dm-container .dm-block.logo-block #dm-logo {
         position: relative;
         display: inline-block;
         float: left;

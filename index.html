@@ -1849,13 +1849,13 @@
     <!-- ------------------------------ ********** FOOTER ********** ------------------------------ -->
     <div id="footer">
         <div class="dm-container">
-            <div class="dm-block">
+            <div class="dm-block" id="dm-sm">
                 <a href="index.html" id="dm-logo-footer"></a>
 
                 <div class="footer-contact-surround">
                     <!--<h2 class="title">Get Connected</h2>-->
 
-                    <p>Volg ons via<br/>sociaal media</p>
+                    <p>Volg ons via</p>
                     <ul class="footer-contact">
                         <li>
                             <a href="#" class="facebook-button">&nbsp;</a>
@@ -1866,27 +1866,61 @@
                     </ul>
                 </div>
             </div>
-            <div class="dm-block">
-                <!--<h2 class="title">Klantenservice</h2>-->
-                <ul class="dm-menu l1">
-                    <li class="item">
-                        <a href="#">Algemene Voorwaarden</a>
-                    </li>
-                    <li class="item">
-                        <a href="#">Menu</a>
-                    </li>
-                    <li class="item">
-                        <a href="#">Acties</a>
-                    </li>
-                    <li class="item">
-                        <a href="#">Contact</a>
-                    </li>
 
-                </ul>
+
+            <div class="dm-block" id="dm-fili">
+                <!--<h2 class="title">Klantenservice</h2>-->
+                <!--<ul class="dm-menu l1">-->
+                <!--<li class="item">-->
+                <!--<a href="#">Algemene Voorwaarden</a>-->
+                <!--</li>-->
+                <!--<li class="item">-->
+                <!--<a href="#">Menu</a>-->
+                <!--</li>-->
+                <!--<li class="item">-->
+                <!--<a href="#">Acties</a>-->
+                <!--</li>-->
+                <!--<li class="item">-->
+                <!--<a href="#">Contact</a>-->
+                <!--</li>-->
+
+                <!--</ul>-->
+
+
+                <p>Zoek uw filiaal!</p>
+
+                <form id="frmSearchLocation" action=""
+                      method="post">
+                    <dl class="zend_form">
+                        <!--<div>-->
+                        <!--&lt;!&ndash;<dt id="naam-label"><label for="naam" class="required">Naam</label></br></dt>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<dd id="naam-element"><input type="text" name="naam" placeholder="Naam" id="naam" value=""/>&ndash;&gt;-->
+                        <!--</dd>-->
+                        <!--</div>-->
+                        <div>
+                            <!--<dt id="email-label"><label for="email" class="required">E-mail</label></br></dt>-->
+                            <dd id="location-element"><input type="text" name="email" placeholder="E-mail"
+                                                             id="email"
+                                                             value=""/></dd>
+                        </div>
+                        <div>
+                            <!--<dt id="save-label">&#160;</dt>-->
+                            <dd id="search-element"><input type="submit" name="save" id="search" class="knop"
+                                                           value="Zoeken"
+                                                           style="width: 50%; display: inline-block; float: left;"/>
+
+                                <button type="button" id="filialen" data-toggle="modal" data-target="#filialenModal" class="knop" style="width: 50%; float: right; padding: 4px 10px;     border-radius: 4px;
+    border: 1px solid #739928;">Filialen
+                                </button>
+                            </dd>
+                        </div>
+                    </dl>
+                </form>
 
             </div>
 
-            <div class="dm-block">
+
+            <div class="dm-block" id="dm-nb">
                 <!--<h2 class="title">Nieuwsbrief</h2>-->
 
                 <p>Meld je aan voor onze nieuwbrief!</p>
@@ -1905,7 +1939,7 @@
                                                           value=""/></dd>
                         </div>
                         <div>
-                            <dt id="save-label">&#160;</dt>
+                            <!--<dt id="save-label">&#160;</dt>-->
                             <dd id="save-element"><input type="submit" name="save" id="save" class="knop"
                                                          value="Aanmelden"/></dd>
                         </div>
@@ -2039,7 +2073,94 @@
     //    })
     //    ;
 </script>
+<!-- Modal -->
+<div class="modal fade" id="filialenModal" tabindex="-1" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="dm-block box2" style="margin: 0;">
+                <a href="#side2" data-toggle="collapse" data-target="#filialen"><h2 class="title">Filialen</h2></a>
 
+
+                <div id="filialen" class="">
+                    <ul class="dm-menu l1 panel-group" id="accordion">
+                        <li class="item panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseAntwerpen" class="collapsed">Antwerpen</a>
+
+                            <div id="collapseAntwerpen" class="panel-collapse collapse" style="height: 0px;">
+                                <!--<p>Montignystraat 113<br>2018 Antwerpen</p>-->
+                                <p>Tel.: 03/248.40.40</p>
+                                <p>zuid@pizzaphone.be</p>
+
+                            </div>
+                        </li>
+                        <li class="item panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseBrasschaat" class="collapsed">Brasschaat</a>
+
+                            <div id="collapseBrasschaat" class="panel-collapse collapse">
+                                <!--<p>Montignystraat 113<br>2018 Antwerpen</p>-->
+                                <p>Tel.: 03/652.00.12</p>
+                                <p>brasschaat@pizzaphone.be</p>
+
+                            </div>
+                        </li>
+                        <li class="item panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseHoofdkantoor" class="collapsed">Hoofdkantoor</a>
+
+                            <div id="collapseHoofdkantoor" class="panel-collapse collapse">
+                                <!--<p>Montignystraat 113<br>2018 Antwerpen</p>-->
+                                <p>Tel.: 032720201</p>
+                                <p>hoofd@pizzaphone.be</p>
+
+                            </div>
+                        </li>
+                        <li class="item panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseLinkeroever" class="collapsed">Linkeroever</a>
+
+                            <div id="collapseLinkeroever" class="panel-collapse collapse">
+                                <!--<p>Montignystraat 113<br>2018 Antwerpen</p>-->
+                                <p>Tel.: 03/283.02.22</p>
+                                <p>linkeroever@pizzaphone.be</p>
+
+                            </div>
+                        </li>
+                        <li class="item panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseMerksem" class="collapsed">Merksem</a>
+
+                            <div id="collapseMerksem" class="panel-collapse collapse">
+                                <!--<p>Montignystraat 113<br>2018 Antwerpen</p>-->
+                                <p>Tel.: 03/272.02.03</p>
+                                <p>noord@pizzaphone.be</p>
+
+                            </div>
+                        </li>
+                        <li class="item panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseMortsel" class="collapsed">Mortsel</a>
+
+                            <div id="collapseMortsel" class="panel-collapse collapse">
+                                <!--<p>Montignystraat 113<br>2018 Antwerpen</p>-->
+                                <p>Tel.: 03/449.40.40</p>
+                                <p>mortsel@pizzaphone.be</p>
+
+                            </div>
+                        </li>
+                        <li class="item panel panel-default">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTurnhout" class="collapsed">Turnhout</a>
+
+                            <div id="collapseTurnhout" class="panel-collapse collapse">
+                                <!--<p>Montignystraat 113<br>2018 Antwerpen</p>-->
+                                <p>Tel.: 014/411.500</p>
+                                <p>turnhout@pizzaphone.be</p>
+
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="inloggenModal" tabindex="-1" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
