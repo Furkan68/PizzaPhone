@@ -2011,7 +2011,8 @@
         });
 
         function $fixedMainmenu() {
-            if ($(window).scrollTop() > 182) {
+            //i change the .scrollTop from 182 to 482 te fix the scroll in the phone scream 
+            if ($(window).scrollTop() > 482) {
                 $("#header").addClass("mainmenu-fixed");
                 $("#mainmenu").addClass("mainmenu-fixed");
             } else {
